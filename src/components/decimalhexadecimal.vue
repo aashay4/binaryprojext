@@ -1,0 +1,85 @@
+<template>
+  <div>
+    <header-app></header-app>
+    <div class="w3-main" style="margin-left:250px">
+      <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">Decimal to Hexadecimal</h1>
+          <button v-on:click="dectohex()" style="width: 32%">Decimal to Hexadecimal</button>
+          <button v-on:click="hextodec()" style="width: 32%">Hexadecimal to Decimal</button>
+          <button v-on:click="reset()" style="width: 32%">Clear all the fields</button><br><br>
+            <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/>
+            <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll">Conversion: {{ ans }}</p>
+        </div>
+        <div class="w3-third w3-container">
+          <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+          <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+        </div>
+      </div>
+
+      <div class="w3-row">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">How to convert decimal to hexadecimal?</h1>
+          <p>Follow these steps</p>
+          <li><ul>Divide the given number by 16</ul></li>
+          <li><ul>Note the remaining numbers in Hexadecimal</ul></li>
+          <li><ul>Again divide the result by 16 and keep on repeating it until the result is 0</ul></li>
+        </div>
+        <div class="w3-third w3-container">
+          <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+          <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+        </div>
+      </div>
+      <footer-app></footer-app>
+  </div>
+</div>
+</template>
+
+<script>
+import header from './header.vue';
+import footer from './footer.vue';
+
+export default {
+
+  components:{
+    'header-app': header,
+    'footer-app': footer
+  },
+  data () {
+    return {
+      text_value: null,
+            total: null,
+            ans: "",
+            aaa: null,
+            text_val: null
+    }
+  },
+  methods: {
+    dectohex() {
+      this.aaa = parseInt(this.text_value);
+      var dectohex = this.aaa.toString(16).toUpperCase();
+      this.ans = dectohex;
+            },
+    hextodec() {
+      this.aaa = parseInt(this.text_value);
+      var covert = parseInt(this.aaa,16);
+      this.ans = covert;
+     },
+   reset() {
+     this.ans = '',
+     this.text_value= null
+   },
+  }
+}
+</script>
+
+<style>
+#box {
+  background-color: lightgrey;
+   width: 300px;
+   border: 5px solid gray;
+   padding: 10%;
+   margin-left: 30%;
+
+}
+</style>

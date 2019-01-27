@@ -1,0 +1,71 @@
+<template>
+  <div>
+    <header-app></header-app>
+    <div class="w3-main" style="margin-left:250px">
+      <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">Decimal to Octal</h1>
+          <button v-on:click="dectooct()" style="width: 32%">Decimal to Octal</button>
+          <button v-on:click="octtodec()" style="width: 32%">Octal to Decimal</button>
+          <button v-on:click="reset()" style="width: 32%">Clear all the fields</button><br><br>
+            <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/>
+            <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll">Conversion: {{ ans }}</p>
+        </div>
+        <div class="w3-third w3-container">
+          <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+          <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+        </div>
+      </div>
+      <footer-app></footer-app>
+  </div>
+</div>
+</template>
+
+<script>
+import header from './header.vue';
+import footer from './footer.vue';
+
+export default {
+
+  components:{
+    'header-app': header,
+    'footer-app': footer
+  },
+  data () {
+    return {
+      text_value: null,
+            total: null,
+            ans: "",
+            aaa: null,
+            text_val: null
+    }
+  },
+  methods: {
+    dectooct() {
+      this.aaa = parseInt(this.text_value);
+      var dectooct = this.aaa.toString(8);
+      this.ans = dectooct;
+            },
+    octtodec() {
+      this.aaa = parseInt(this.text_value);
+      var octtodec=parseInt(this.aaa,8);
+      this.ans = octtodec;
+     },
+   reset() {
+     this.ans = '',
+     this.text_value= null
+   },
+  }
+}
+</script>
+
+<style scoped>
+#box {
+  background-color: lightgrey;
+   width: 300px;
+   border: 5px solid gray;
+   padding: 10%;
+   margin-left: 30%;
+
+}
+</style>
