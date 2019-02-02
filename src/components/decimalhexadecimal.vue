@@ -16,20 +16,6 @@
           <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
         </div>
       </div>
-
-      <div class="w3-row">
-        <div class="w3-twothird w3-container" style="text-align: justify;">
-          <h1 class="w3-text-teal">How to convert decimal to hexadecimal?</h1>
-
-          <p>
-          Divide the given number by 16. Note the remaining numbers in Hexadecimal. Again divide the result by 16 and keep on repeating it until the result is 0.
-        </p>
-        </div>
-        <div class="w3-third w3-container">
-          <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-          <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-        </div>
-      </div>
       <footer-app></footer-app>
   </div>
 </div>
