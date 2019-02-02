@@ -19,7 +19,7 @@
 
       <div class="w3-row" style="text-align: justify;">
         <div class="w3-twothird w3-container">
-          <h1 class="w3-text-teal">How to Convert from Text to Binary?</h1>
+          <h1 class="w3-text-teal">How to Convert Text to Binary?</h1>
             <p>Take the first character of the text string and convert it into the ASCII value. And then convert the ASCII value to the equivalent binary number. After the conversion the number you will get should be of 8-bits, if it is less then 8-bits then add zeros and make it 8-bits long.</p>
         </div>
         <div class="w3-third w3-container">
