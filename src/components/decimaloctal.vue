@@ -7,7 +7,7 @@
           <h1 class="w3-text-teal">Decimal to Octal</h1>
           <button v-on:click="dectooct()" style="width: 33%">Decimal to Octal</button>
           <button v-on:click="octtodec()" style="width: 33%">Octal to Decimal</button>
-          <button v-on:click="reset()" style="width: 34%">clear all fields</button><br><br>
+          <button v-on:click="reset()" style="width: 34%">clear all the fields</button><br><br>
             <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/>
             <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll">Conversion: {{ ans }}</p>
         </div>
