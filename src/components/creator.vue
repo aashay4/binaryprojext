@@ -6,7 +6,7 @@
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">About Creator</h1>
           <div class="container-fluid bg-1 text-center">
-<h4>Aashay Trivedi is the creator of Texttobinary. He is the CEO of Lantech Infocom. Because of his enthusiasm towards learning new technologies, he has worked on
+<h4 style="text-align: justify">Aashay Trivedi is the creator of Texttobinary. He is the CEO of Lantech Infocom. Because of his enthusiasm towards learning new technologies, he has worked on
 modern technologies like Vue.js, D3.js, Socket.IO. Being the CEO, Aashay takes care of business development activities and exploring new technologies to get the
 best possible results for the clients.</h4><br>
 <i class="fa fa-envelope" style="width:30px"> </i> <b>aashay@lantechinfocom.com</b><br>

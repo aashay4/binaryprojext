@@ -5,9 +5,9 @@
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">Binary to Octal</h1>
-          <button v-on:click="bintooct()" style="width: 32%">Binary to Octal</button>
-          <button v-on:click="octtobin()" style="width: 32%">Octal to binary</button>
-          <button v-on:click="reset()" style="width: 32%">Clear all the fields</button><br><br>
+          <button v-on:click="bintooct()" style="width: 33%">Binary to Octal</button>
+          <button v-on:click="octtobin()" style="width: 33%">Octal to binary</button>
+          <button v-on:click="reset()" style="width: 34%">clear all fields</button><br><br>
             <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/>
             <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll">Conversion: {{ ans }}</p>
         </div>

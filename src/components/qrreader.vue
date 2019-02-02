@@ -4,7 +4,7 @@
     <div class="w3-main" style="margin-left:250px">
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
-          <h1 class="w3-text-teal">Binary to Hexadecimal</h1>
+          <h1 class="w3-text-teal">QR Code Generator</h1>
           <button v-on:click="reset()" style="width: 100%">Clear all the fields</button><br><br>
             <input type="text" v-model="message" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/>
             <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll">

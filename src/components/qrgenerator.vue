@@ -4,7 +4,7 @@
     <div class="w3-main" style="margin-left:250px">
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
-          <h1 class="w3-text-teal">Binary to Hexadecimal</h1>
+          <h1 class="w3-text-teal">QR Code Reader</h1>
           <button v-on:click="reset()" style="width: 100%">Clear all the fields</button><br><br>
           <p class="error">{{ error }}</p>
           <p>Note:<b>Our API does not browse files in the Chrome for Mobile devices, CAMARA scanning is running for all the devices, to use the featurem click on choose file button.</b></p>

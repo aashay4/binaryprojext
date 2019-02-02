@@ -5,9 +5,9 @@
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">Binary To Text</h1>
-          <button v-on:click="texttobinary()" style="width: 32%">Text to Binary</button>
-          <button v-on:click="binarytotext()" style="width: 32%">Binary to Text</button>
-          <button v-on:click="reset()" style="width: 32%">Clear all the fields</button><br><br>
+          <button v-on:click="binarytotext()" style="width: 33%">Binary to Text</button>
+          <button v-on:click="texttobinary()" style="width: 33%">Text to Binary</button>
+          <button v-on:click="reset()" style="width: 34%">clear all fields</button><br><br>
             <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/>
             <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll"><b>Conversion:</b> {{ ans }}</p>
         </div>
@@ -20,11 +20,9 @@
       <div class="w3-row">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">How to Convert from Text to Binary?</h1>
-          <p>Follow these steps</p>
-            <li>
-              <ul>Take the first character of the text string and convert it into the ASCII value</ul></li>
-              <li><ul>And then convert the ASCII value to the equivalent binary number</ul></li>
-              <li><ul>After the conversion the number you will get should be of 8-bits, if it is less then 8-bits then add zeros and make it 8-bits long.</ul></li>
+            <li style="text-align: justify"><ul>Take the first character of the text string and convert it into the ASCII value</ul></li>
+              <li style="text-align: justify"><ul>And then convert the ASCII value to the equivalent binary number</ul></li>
+              <li style="text-align: justify"><ul>After the conversion the number you will get should be of 8-bits, if it is less then 8-bits then add zeros and make it 8-bits long.</ul></li>
         </div>
         <div class="w3-third w3-container">
           <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
@@ -35,10 +33,8 @@
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">How to convert Binary to Text?</h1>
-          <p>Follow these steps</p>
-          <li>
-            <ul>Take first eight characters binary given to you and convert it into the ASCII values</ul></li>
-            <li><ul>Now find out the ASCII value of the specific character</ul></li>
+          <li style="text-align: justify"><ul>Take first eight characters binary given to you and convert it into the ASCII values</ul></li>
+            <li style="text-align: justify"><ul>Now find out the ASCII value of the specific character</ul></li>
         </div>
         <div class="w3-third w3-container">
           <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
@@ -81,7 +77,7 @@ export default {
                 e = (e - a) / 2;
         s = a + s;
       }while(e!=0);
-        while(s.length<8) {
+        while(s.length<9) {
           s = " 0" + s;
         }
         this.ans += s;
