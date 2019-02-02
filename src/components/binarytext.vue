@@ -17,12 +17,10 @@
         </div>
       </div>
 
-      <div class="w3-row">
+      <div class="w3-row" style="text-align: justify;">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">How to Convert from Text to Binary?</h1>
-            <li style="text-align: justify"><ul>Take the first character of the text string and convert it into the ASCII value</ul></li>
-              <li style="text-align: justify"><ul>And then convert the ASCII value to the equivalent binary number</ul></li>
-              <li style="text-align: justify"><ul>After the conversion the number you will get should be of 8-bits, if it is less then 8-bits then add zeros and make it 8-bits long.</ul></li>
+            <p>Take the first character of the text string and convert it into the ASCII value. And then convert the ASCII value to the equivalent binary number. After the conversion the number you will get should be of 8-bits, if it is less then 8-bits then add zeros and make it 8-bits long.</p>
         </div>
         <div class="w3-third w3-container">
           <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
@@ -30,11 +28,10 @@
         </div>
       </div>
 
-      <div class="w3-row w3-padding-64">
+      <div class="w3-row w3-padding-64" style="text-align: justify;">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">How to convert Binary to Text?</h1>
-          <li style="text-align: justify"><ul>Take first eight characters binary given to you and convert it into the ASCII values</ul></li>
-            <li style="text-align: justify"><ul>Now find out the ASCII value of the specific character</ul></li>
+          <p>Take first eight characters binary given to you and convert it into the ASCII values. Now find out the ASCII value of the specific character.</p>
         </div>
         <div class="w3-third w3-container">
           <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>

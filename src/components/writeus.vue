@@ -5,7 +5,7 @@
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">Write for Us!</h1>
-            <p class="w3-padding-32 w3-right" style="width: 100%; style=text-align: justify">
+            <p class="w3-padding-32 w3-right" style="width: 100%; text-align: justify">
               We welcome individual bloggers and writers to <b>"write for us"</b>! If writing is your passion and you can write creative content then do not hesitate to pitch us. We
               are accepting articles on Technology, Computer networking, LAN Tricks, and Programming. Before pitching us please go through the guidelines.
             </p>

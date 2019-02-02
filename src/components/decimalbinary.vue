@@ -17,14 +17,10 @@
         </div>
       </div>
 
-      <div class="w3-row">
+      <div class="w3-row" style="text-align: justify;">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">How to convert decimal to binary?</h1>
-
-          <p>Follow these steps</p>
-          <li><ul>First thing first, devide the number given to you by 2</ul></li>
-          <li><ul>Repeat it until you get a 0</ul></li>
-          <li><ul>And then note the reminder in the reverse order</ul></li>
+          <p>Devide the number given to you by 2. Repeat it until you get a 0. And then note the reminder in the reverse order.</p>
         </div>
         <div class="w3-third w3-container">
           <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>

@@ -18,12 +18,12 @@
       </div>
 
       <div class="w3-row">
-        <div class="w3-twothird w3-container">
+        <div class="w3-twothird w3-container" style="text-align: justify;">
           <h1 class="w3-text-teal">How to convert decimal to hexadecimal?</h1>
-          <p>Follow these steps</p>
-          <li><ul>Divide the given number by 16</ul></li>
-          <li><ul>Note the remaining numbers in Hexadecimal</ul></li>
-          <li><ul>Again divide the result by 16 and keep on repeating it until the result is 0</ul></li>
+
+          <p>
+          Divide the given number by 16. Note the remaining numbers in Hexadecimal. Again divide the result by 16 and keep on repeating it until the result is 0.
+        </p>
         </div>
         <div class="w3-third w3-container">
           <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
