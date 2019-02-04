@@ -12,6 +12,7 @@ import qreader from './components/qrreader.vue'
 import creator from './components/creator.vue'
 import blogs from './components/blogs.vue'
 import writeus from './components/writeus.vue'
+import notfound from './components/notfound.vue'
 
 Vue.use(Router)
 
@@ -107,6 +108,14 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/writeus.vue')
+    },
+    {
+      path: '/404',
+      component: () => import(/* webpackChunkName: "about" */ './components/notfound.vue')
+    },
+    {
+      path: '*',
+      redirect: '/404'
     }
   ]
 })
