@@ -56,10 +56,8 @@ export default {
   data () {
     return {
       text_value: null,
-            total: null,
             ans: "",
             aaa: null,
-            text_val: null
     }
   },
   methods: {
@@ -74,10 +72,28 @@ export default {
                 e = (e - a) / 2;
         s = a + s;
       }while(e!=0);
-        while(s.length<9) {
-          s = " 0" + s;
+        while(s.length<8) {
+          if(s.length === 7) {
+            s = " 0" + s;
+            this.ans += s;
+          }
+          if(s.length === 6) {
+          s = " 00" + s;
+          this.ans += s;
+          }
+          if(s.length === 5) {
+          s = " 000" + s;
+          this.ans += s;
+          }
+          if(s.length === 4) {
+          s = " 0000" + s;
+          this.ans += s;
+          }
+          if(s.length === 3) {
+          s = " 00000" + s;
+          this.ans += s;
+          }
         }
-        this.ans += s;
               }
             },
     binarytotext() {
