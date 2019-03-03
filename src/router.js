@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import Meta from 'vue-meta'
 import Router from 'vue-router'
 import binarytext from './components/binarytext.vue'
 import binaryhexadecimal from './components/binaryhexadecimal.vue'
@@ -15,6 +16,7 @@ import writeus from './components/writeus.vue'
 import notfound from './components/notfound.vue'
 
 Vue.use(Router)
+Vue.use(Meta)
 
 export default new Router({
   mode: 'history',

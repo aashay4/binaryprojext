@@ -27,6 +27,18 @@ import footer from './footer.vue';
 
 export default {
 
+  metaInfo: {
+     title: 'Decimal to Hexadecimal Converter',
+     meta: [
+
+       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+       {name: 'description', content: 'Best decimal to hexadecimal converter. Get the answers about the conversions and learn how to convert decimal number to a hexadecimal.'}
+     ],
+     links: [
+       {rel: 'canonical', href: 'http://binarytotext.net/decimal-to-hexadecimal'}
+     ]
+   },
+
   components:{
     'header-app': header,
     'footer-app': footer

@@ -42,6 +42,15 @@ import footer from './footer.vue';
 
 export default {
 
+  metaInfo: {
+     title: 'Write for Us',
+     meta: [
+
+       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+       {name: 'description', content: 'Write for us on these topics - Programming, Computer networking, Maths, Online tools'}
+     ],
+   },
+
   components:{
     'header-app': header,
     'footer-app': footer

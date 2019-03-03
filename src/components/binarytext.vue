@@ -49,6 +49,18 @@ import footer from './footer.vue';
 
 export default {
 
+  metaInfo: {
+     title: 'Binary to Text Converter | Online Binary Translator',
+     meta: [
+
+       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+       {name: 'description', content: 'Binary to text helps you convert zeros and ones to the text or the text to binary. Use this free binary translator to convert any given string.'}
+     ],
+     links: [
+       {rel: 'canonical', href: 'http://binarytotext.net/'}
+     ]
+   },
+
   components:{
     'header-app': header,
     'footer-app': footer

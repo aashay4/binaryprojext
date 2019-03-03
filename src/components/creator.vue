@@ -29,6 +29,15 @@ import footer from './footer.vue';
 
 export default {
 
+  metaInfo: {
+     title: 'About Creator',
+     meta: [
+
+       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+       {name: 'description', content: 'Aashay Trivedi - Creator'}
+     ],
+   },
+
   components:{
     'header-app': header,
     'footer-app': footer

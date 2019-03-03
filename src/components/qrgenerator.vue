@@ -32,6 +32,17 @@ import footer from './footer.vue';
 Vue.use(VueQrcodeReader)
 
 export default {
+  metaInfo: {
+     title: 'QR Code Reader – Scan your QR Codes',
+     meta: [
+
+       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+       {name: 'description', content: 'Best online QR code reader. Visit our website and scan QR codes very easily.'}
+     ],
+     links: [
+       {rel: 'canonical', href: 'http://binarytotext.net/qr-code-reader'}
+     ]
+   },
 
   components:{
     'header-app': header,

@@ -27,6 +27,18 @@ import footer from './footer.vue';
 
 export default {
 
+  metaInfo: {
+     title: 'Decimal to Binary Online Converter for Free',
+     meta: [
+
+       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+       {name: 'description', content: 'With Decimal to Binary converter, get the numbers converted really easily. Get to know about the conversion process of binary to decimal and vice a versa.'}
+     ],
+     links: [
+       {rel: 'canonical', href: 'http://binarytotext.net/decimal-to-binary/'}
+     ]
+   },
+
   components:{
     'header-app': header,
     'footer-app': footer

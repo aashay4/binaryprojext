@@ -27,6 +27,18 @@ import footer from './footer.vue';
 
 export default {
 
+  metaInfo: {
+     title: 'Binary to Octal',
+     meta: [
+
+       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+       {name: 'description', content: 'Best online binary to octal converter.'}
+     ],
+     links: [
+       {rel: 'canonical', href: 'http://binarytotext.net/binary-to-octal'}
+     ]
+   },
+
   components:{
     'header-app': header,
     'footer-app': footer
