@@ -6,16 +6,15 @@
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">About Creator</h1>
           <div class="container-fluid bg-1 text-center">
-<p style="text-align: justify;">Aashay Trivedi is the creator of BinarytoText. He is the CEO of Lantech Infocom. Because of his enthusiasm towards learning new technologies, he has worked on
-modern technologies like Vue.js, D3.js, Socket.IO. Being the CEO, Aashay takes care of business development activities and explores new technologies to get the
+<p style="text-align: justify;">Aashay Trivedi is the creator of BinarytoText and CEO of Lantech Infocom. Because of his enthusiasm towards learning new technologies, he has worked on
+modern technologies like Vue.js, D3.js, Socket.IO, and Node.js. Being the CEO, Aashay takes care of business development activities and explores new technologies to get the
 best possible results for the clients.</p><br>
-<i class="fa fa-envelope" style="width:30px"> </i> <b>aashay@lantechinfocom.com</b><br>
+<i class="fa fa-envelope" style="width:30px"> </i> <b><a href="mailto:aashay@lantechinfocom.com">aashay@lantechinfocom.com</a></b><br>
 <i class="fa fa-skype" style="width:30px"> </i> <b>live:aashay.trivedi1</b><br>
 </div>
         </div>
         <div class="w3-third w3-container">
-          <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-          <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+          
         </div>
       </div>
       <footer-app></footer-app>
