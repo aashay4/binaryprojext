@@ -24,6 +24,7 @@
 <script>
 import header from './header.vue';
 import footer from './footer.vue';
+import { BigNumber } from 'bignumber.js';
 
 export default {
 
@@ -53,14 +54,14 @@ export default {
   },
   methods: {
     dectooct() {
-      this.aaa = parseInt(this.text_value);
-      var dectooct = this.aaa.toString(8);
-      this.ans = dectooct;
+    var x = new BigNumber(this.text_value, 10)
+    var dectobin = x.toString(8);
+    this.ans = dectobin;
             },
     octtodec() {
-      this.aaa = parseInt(this.text_value);
-      var octtodec=parseInt(this.aaa,8);
-      this.ans = octtodec;
+    var x = new BigNumber(this.text_value, 8)
+    var dectobin = x.toString(10);
+    this.ans = dectobin;
      },
    reset() {
      this.ans = '',

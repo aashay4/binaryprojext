@@ -24,6 +24,7 @@
 <script>
 import header from './header.vue';
 import footer from './footer.vue';
+import { BigNumber } from 'bignumber.js';
 
 export default {
 
@@ -46,22 +47,21 @@ export default {
   data () {
     return {
       text_value: null,
-            total: null,
-            ans: "",
-            aaa: null,
-            text_val: null
+            ans: ""
     }
   },
   methods: {
     bintohex() {
-      this.aaa = parseInt(this.text_value);
-      var bintohex = parseInt(this.text_value, 2).toString(16);
-                    this.ans = bintohex;
+      var bin = this.text_value;
+      var m = new  BigNumber(bin, 2)
+      var binn = m.toString(16);
+      this.ans = binn;
             },
     hextobin() {
-      this.aaa = parseInt(this.text_value)
-    var dectobin = (parseInt(this.aaa, 16).toString(2));
-    this.ans = dectobin;
+      var hex = this.text_value;
+      var x = new BigNumber(hex, 16);
+      var dect = x.toString(2);
+      this.ans = dect;
      },
    reset() {
      this.ans = '',

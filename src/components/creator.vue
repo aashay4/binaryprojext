@@ -14,7 +14,7 @@ best possible results for the clients.</p><br>
 </div>
         </div>
         <div class="w3-third w3-container">
-          
+
         </div>
       </div>
       <footer-app></footer-app>
@@ -43,28 +43,7 @@ export default {
   },
   data () {
     return {
-      text_value: null,
-            total: null,
-            ans: "",
-            aaa: null,
-            text_val: null
     }
-  },
-  methods: {
-    bintooct() {
-      this.aaa = parseInt(this.text_value);
-      var bintooct = parseInt(this.aaa, 2).toString(8);
-      this.ans = bintooct;
-            },
-    octtobin() {
-      this.aaa = parseInt(this.text_value);
-      var octtobin = (parseInt(this.aaa, 8).toString(2));
-      this.ans = octtobin;
-     },
-   reset() {
-     this.ans = '',
-     this.text_value= null
-   },
   }
 }
 </script>

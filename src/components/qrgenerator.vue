@@ -54,7 +54,6 @@ export default {
       text_value: null,
             total: null,
             result: '',
-            aaa: null,
             text_val: null,
             title: "QR code generator",
             error: "",

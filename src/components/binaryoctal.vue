@@ -46,10 +46,7 @@ export default {
   data () {
     return {
       text_value: null,
-            total: null,
-            ans: "",
-            aaa: null,
-            text_val: null
+            ans: ""
     }
   },
   methods: {
