@@ -5,10 +5,13 @@
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">Binary To Text</h1>
+          <p>To use the binary to text tool, enter a binary number into the box, click on the button and get the equivalent text into the output. For example, insert “01000011 01101111 01101110 01110110 01100101 01110010 01110100” into the box and click on the button, you will get the text string “Convert”.
+If you want to convert text to binary, then enter any text into the text box and click on the button “Text to binary”. You will get the equivalent binary value in the converter.
+</p>
+          <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/><br><br>
           <button v-on:click="binarytotext()" style="width: 33%">Binary to Text</button>
           <button v-on:click="texttobinary()" style="width: 33%">Text to Binary</button>
           <button v-on:click="reset()" style="width: 34%">clear all fields</button><br><br>
-            <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/>
             <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll"><b>Conversion:</b> {{ ans }}</p>
         </div>
         <div class="w3-third w3-container">
@@ -19,8 +22,15 @@
 
       <div class="w3-row" style="text-align: justify;">
         <div class="w3-twothird w3-container">
-          <h1 class="w3-text-teal">How to Convert Text to Binary?</h1>
-            <p>Take the first character of the text string and convert it into the ASCII value. And then convert the ASCII value to the equivalent binary number. After the conversion the number you will get should be of 8-bits, if it is less then 8-bits then add zeros and make it 8-bits long.</p>
+          <h1 class="w3-text-teal">Binary</h1>
+            <p>Binary is just a number system that uses only two digits, o and 1 to rectify different queries. This number system one of the most popular systems in modern computer processing, electronics, wireless networking systems, data process over a network layer. A computer system can only understands the binary numbers and for that reason, it has become one of the most popular terms in digital world.</p>
+        </div>
+      </div>
+
+      <div class="w3-row w3-padding-64" style="text-align: justify;">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">How to convert Binary to Text?</h1>
+          <p>For example, if you want to convert a binary number "01000001" into its equivalent text number. Take the first eight characters binary given to you(That's probably 01000001) and convert it into the ASCII values. Now find out the ASCII value of the specific character. And you will get the number "A" for that binary number. If you have been given number (0100000101010111). Now take the first eight characters, find the equivalent text number. After the completion, take another eight characters and find their relevant values.</p>
         </div>
         <div class="w3-third w3-container">
           <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
@@ -28,10 +38,10 @@
         </div>
       </div>
 
-      <div class="w3-row w3-padding-64" style="text-align: justify;">
+      <div class="w3-row" style="text-align: justify;">
         <div class="w3-twothird w3-container">
-          <h1 class="w3-text-teal">How to convert Binary to Text?</h1>
-          <p>Take first eight characters binary given to you and convert it into the ASCII values. Now find out the ASCII value of the specific character.</p>
+          <h1 class="w3-text-teal">How to Convert Text to Binary?</h1>
+            <p>If you want to convert the string "Text" into the binary number then follow these simple steps. Take the first character of the text(it would be "T") string and convert it into the ASCII value. And then convert the ASCII value to the equivalent binary number. The binary number for the string "T" will be 01110100. After the conversion, the number you will get should be of 8-bits, if it is less then 8-bits then add zeros and make it an 8-bits long. After the conversion of a number T, do the same conversion with other numbers, E, X, and the last one T. After completion of the operation, you will get this answer(01010100 01100101 01111000 01110100).</p>
         </div>
         <div class="w3-third w3-container">
           <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
