@@ -8,6 +8,10 @@
             <p>{ response: no articles found }</p>
         </div>
         <div class="w3-third w3-container">
+          <Adsense
+    data-ad-client="pub-8485628208613195"
+    data-ad-slot="7853167734">
+</Adsense>
           <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
           <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
         </div>
