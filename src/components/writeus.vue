@@ -43,7 +43,7 @@ import footer from './footer.vue';
 export default {
 
   metaInfo: {
-     title: 'Write for Us',
+     title: 'Write for Us in Technology, Lan, Coding, Conversion and Other Topics',
      meta: [
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},

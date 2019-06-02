@@ -120,7 +120,7 @@ import footer from './footer.vue';
 export default {
 
   metaInfo: {
-     title: 'Binary to Octal',
+     title: 'Binary to Octal Converter | Best Online Tool for Conversion',
      meta: [
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},

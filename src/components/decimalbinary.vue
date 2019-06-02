@@ -54,7 +54,7 @@ import { BigNumber } from 'bignumber.js';
 export default {
 
   metaInfo: {
-     title: 'Decimal to Binary Online Converter for Free',
+     title: 'Decimal to Binary Online Converter | Convert Numbers with this tool',
      meta: [
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},

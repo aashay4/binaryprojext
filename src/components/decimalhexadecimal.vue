@@ -178,7 +178,7 @@ import { BigNumber } from 'bignumber.js';
 export default {
 
   metaInfo: {
-     title: 'Decimal to Hexadecimal Converter',
+     title: 'Decimal to Hexadecimal Converter | Dec to Hex Translator Online',
      meta: [
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},

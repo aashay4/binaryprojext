@@ -132,7 +132,7 @@ import { BigNumber } from 'bignumber.js';
 export default {
 
   metaInfo: {
-     title: 'Decimal to Octal Converter',
+     title: 'Decimal to Octal Converter | Online Number Translator Tool',
      meta: [
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},

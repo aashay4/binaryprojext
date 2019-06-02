@@ -8,10 +8,6 @@
             <p>{ response: no articles found }</p>
         </div>
         <div class="w3-third w3-container">
-          <Adsense
-    data-ad-client="pub-8485628208613195"
-    data-ad-slot="7853167734">
-</Adsense>
           <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
           <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
         </div>
@@ -27,6 +23,14 @@ import footer from './footer.vue';
 
 export default {
 
+  metaInfo: {
+     title: 'Get to know what is happening in the World of Binary',
+     meta: [
+
+       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+       {name: 'description', content: 'Stay updated with the latest technology news and use our tool for any kid of conversions for free'}
+     ],
+   },
   components:{
     'header-app': header,
     'footer-app': footer

@@ -124,7 +124,7 @@ import { BigNumber } from 'bignumber.js';
 export default {
 
   metaInfo: {
-     title: 'Hexadecimal to Octal',
+     title: 'Hexadecimal to Octal | Tool for Base 16 to 8 Number',
      meta: [
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},

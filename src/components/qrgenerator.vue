@@ -45,7 +45,7 @@ Vue.use(VueQrcodeReader)
 
 export default {
   metaInfo: {
-     title: 'QR Code Reader – Scan your QR Codes',
+     title: 'QR Code Reader – Scan your QR Codes from this Online Scanner',
      meta: [
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},

@@ -15,10 +15,6 @@ If you want to convert text to binary, then enter any text into the text box and
             <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll"><b>Conversion:</b> {{ ans }}</p>
         </div>
         <div class="w3-third w3-container">
-          <Adsense
-    data-ad-client="pub-8485628208613195"
-    data-ad-slot="7853167734">
-</Adsense>
           <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
           <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
         </div>

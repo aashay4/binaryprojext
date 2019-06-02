@@ -128,7 +128,7 @@ import { BigNumber } from 'bignumber.js';
 export default {
 
   metaInfo: {
-     title: 'Binary to Hexadecimal Online Converter',
+     title: 'Binary to Hexadecimal Online Converter | Convert to Hex Number',
      meta: [
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
