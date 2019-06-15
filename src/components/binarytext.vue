@@ -60,7 +60,7 @@ import footer from './footer.vue';
 export default {
 
   metaInfo: {
-     title: 'Binary to Text Converter | Online Binary Translator',
+     title: 'Binary to Text Converter(Translator)',
      meta: [
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
