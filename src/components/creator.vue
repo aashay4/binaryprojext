@@ -10,7 +10,7 @@
 modern technologies like Vue.js, D3.js, Socket.IO, and Node.js. Being the CEO, Aashay takes care of business development activities and explores new technologies to get the
 best possible results for the clients.</p><br>
 <i class="fa fa-envelope" style="width:30px"> </i> <b><a href="mailto:aashay@lantechinfocom.com">aashay@lantechinfocom.com</a></b><br>
-<i class="fa fa-skype" style="width:30px"> </i> <b>live:aashay.trivedi1</b><br>
+<i class="fa fa-skype" style="width:30px"> </i> <b><a href="skypeto:live:aashay.trivedi1">live:aashay.trivedi1</a></b><br>
 </div>
         </div>
         <div class="w3-third w3-container">
@@ -29,12 +29,12 @@ import footer from './footer.vue';
 export default {
 
   metaInfo: {
-     title: 'About Creator | Get to Know About the Creator Aashay Trivedi',
+     title: 'About Creator - Get to know about Aashay Trivedi',
      meta: [
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: 'Aashay Trivedi - Creator'}
-     ],
+       {name: 'description', content: 'Aashay Trivedi is the creator of this tool.'}
+     ]
    },
 
   components:{
@@ -44,7 +44,7 @@ export default {
   data () {
     return {
     }
-  }
+  },
 }
 </script>
 

@@ -9,21 +9,58 @@
 If you want to convert text to binary, then enter any text into the text box and click on the button “Text to binary”. You will get the equivalent binary value in the converter.
 </p>
           <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/><br><br>
-          <button v-on:click="binarytotext()" style="width: 33%">Binary to Text</button>
-          <button v-on:click="texttobinary()" style="width: 33%">Text to Binary</button>
-          <button v-on:click="reset()" style="width: 34%">clear all fields</button><br><br>
-            <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll"><b>Conversion:</b> {{ ans }}</p>
-        </div>
+          <button v-on:click="binarytotext()" style="width: 32%">Binary to Text</button>
+          <button v-on:click="texttobinary()" style="width: 32%">Text to Binary</button>
+          <button v-on:click="reset()" style="width: 33%">clear all fields</button><br><br>
+            <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll"><b>Conversion:</b> {{ ans }}</p><br><br>
+            <h1 class="w3-text-teal">Binary Translator</h1>
+            <div>
+              <p>Want to convert dec, hex or oct to the equivalent binary number? Here is the full binary translator. Please find it below. Enter any binary number in the box and click of the conversion, you will find out the conversion of that binary number into its equivalent hex, dec or octal number in just a second with our binary translator.</p>
+            <binarytranslator />
+          </div>
+        </div><br>
         <div class="w3-third w3-container">
-          <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-          <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+          <h3 style="background-color: silver;">Other Useful Tools</h3>
+          <ul>
+            <router-link to="/ascii-to-binary">
+            <li>ASCII to Binary</li>
+          </router-link>
+          <router-link to="/decimal-to-binary">
+            <li>
+              Decimal to Binary
+            </li>
+          </router-link>
+            <router-link to="/binary-to-hexadecimal">
+            <li>Binary to Hexadecimal</li></router-link>
+            <router-link to="/decimal-to-hexadecimal">
+            <li>Decimal to Hexadecimal</li></router-link>
+            <router-link to="/decimal-to-octal">
+            <li>Decimal to Octal</li></router-link>
+            <router-link to="/binary-to-octal">
+            <li>Binary to Octal</li></router-link>
+            <router-link to="/hexadecimal-to-octal">
+            <li>Hexadecimal to Octal</li></router-link>
+            <router-link to="/qr-code-generator">
+            <li>QR Code Generator</li></router-link>
+            <router-link to="/qr-code-reader">
+            <li>QR Code Reader</li></router-link>
+          </ul><br><br>
+          <h3 style="background-color: silver;">Useful Resources</h3>
+          <ul>
+            <router-link to="/about-creator">
+            <li>About</li>
+          </router-link>
+            <router-link to="/blog">
+            <li>Blog</li>
+          </router-link>
+          </ul>
         </div>
       </div>
 
       <div class="w3-row" style="text-align: justify;">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">Binary</h1>
-            <p>Binary is just a number system that uses only two digits, o and 1 to rectify different queries. This number system one of the most popular systems in modern computer processing, electronics, wireless networking systems, data process over a network layer. A computer system can only understands the binary numbers and for that reason, it has become one of the most popular terms in digital world.</p>
+            <p>Binary is just a number system that uses only two digits, o and 1 to rectify different queries. This number system one of the most popular systems in modern computer processing, electronics, wireless networking systems, data process over a network layer. A computer system can only understand the binary numbers and for that reason, it has become one of the most popular terms in the digital world.</p>
         </div>
       </div>
 
@@ -31,17 +68,6 @@ If you want to convert text to binary, then enter any text into the text box and
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">How to convert Binary to Text?</h1>
           <p>For example, if you want to convert a binary number "01000001" into its equivalent text number. Take the first eight characters binary given to you(That's probably 01000001) and convert it into the ASCII values. Now find out the ASCII value of the specific character. And you will get the number "A" for that binary number. If you have been given number (0100000101010111). Now take the first eight characters, find the equivalent text number. After the completion, take another eight characters and find their relevant values.</p>
-        </div>
-        <div class="w3-third w3-container">
-          <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-          <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-        </div>
-      </div>
-
-      <div class="w3-row" style="text-align: justify;">
-        <div class="w3-twothird w3-container">
-          <h1 class="w3-text-teal">How to Convert Text to Binary?</h1>
-            <p>If you want to convert the string "Text" into the binary number then follow these simple steps. Take the first character of the text(it would be "T") string and convert it into the ASCII value. And then convert the ASCII value to the equivalent binary number. The binary number for the string "T" will be 01110100. After the conversion, the number you will get should be of 8-bits, if it is less then 8-bits then add zeros and make it an 8-bits long. After the conversion of a number T, do the same conversion with other numbers, E, X, and the last one T. After completion of the operation, you will get this answer(01010100 01100101 01111000 01110100).</p>
         </div>
         <div class="w3-third w3-container">
           <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
@@ -56,6 +82,8 @@ If you want to convert text to binary, then enter any text into the text box and
 <script>
 import header from './header.vue';
 import footer from './footer.vue';
+import { BigNumber } from 'bignumber.js';
+import binarytranslator from './binarytranslator.vue';
 
 export default {
 
@@ -64,16 +92,14 @@ export default {
      meta: [
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: 'Binary to text helps you convert zeros and ones to the text or the text to binary. Use this free binary translator to convert any given string.'}
-     ],
-     links: [
-       {rel: 'canonical', href: 'http://binarytotext.net/'}
+       {name: 'description', content: 'Convert binary to text with this free translator. Just enter zeros and ones and convert it into the equivalent text values with this free binary translator.'}
      ]
    },
 
   components:{
     'header-app': header,
-    'footer-app': footer
+    'footer-app': footer,
+    'binarytranslator': binarytranslator
   },
   data () {
     return {

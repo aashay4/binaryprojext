@@ -4,16 +4,16 @@
     <div class="w3-main" style="margin-left:250px">
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
-          <h1 class="w3-text-teal">Decimal to Binary</h1>
-          <p>To use this decimal to binary tool, enter a decimal number up to 19 characters and click on the conversion button. For example, enter a decimal number "44" into the text box and click on the button, you will get the binary number "101100". If you want to convert a binary number into the decimal then enter zeros and ones into the box and click on specific converter button. You will get the specific decimal number for the zeros and ones.</p>
+          <h1 class="w3-text-teal">Binary to Decimal</h1>
+          <p>You can convert binary to decimal with the help of this tool. Enter zeros and ones into the text box and get decimal digits as an output. For example, enter 101100 binary number into text area and get "101100" answer in the other box. Same way, your inserted values will be updated into the real-time converter and you will get correct answers for the base 8 and base 16 conversions as well. Just enter any value and get started using our tool.</p>
           <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/><br><br>
-          <button v-on:click="dectobin(); dectohex(); dectooct();" style="width: 49%">Decimal to Binary</button>
+          <button v-on:click="bintodec(); bintooct(); bintohex();" style="width: 49%">Binary to Decimal</button>
           <button v-on:click="reset()" style="width: 49%">clear all the fields</button><br><br>
-            <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll">Conversion: {{ ans }}</p>
+            <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll"><b>Conversion:</b> {{ ans }}</p>
             <h3><b>{{ text_value }} to base-8</b></h3>
-            <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll">Conversion: {{ ansoct }}</p>
+            <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll"><b>Conversion:</b> {{ ansoct }}</p>
             <h3><b>{{ text_value }} to base-16</b></h3>
-            <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll">Conversion: {{ anshex }}</p>
+            <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll"><b>Conversion:</b> {{ anshex }}</p>
         </div><br>
         <div class="w3-third w3-container">
           <h3 style="background-color: silver;">Other Useful Tools</h3>
@@ -26,8 +26,8 @@
             <router-link to="/ascii-to-binary">
             <li>ASCII to Binary</li>
           </router-link>
-          <router-link to="/binary-to-decimal">
-          <li>Binary to Decimal</li>
+          <router-link to="/decimal-to-binary">
+          <li>Decimal to Binary</li>
         </router-link>
             <router-link to="/binary-to-hexadecimal">
             <li>Binary to Hexadecimal</li></router-link>
@@ -57,14 +57,18 @@
       </div>
       <div class="w3-row" style="text-align: justify;">
         <div class="w3-twothird w3-container">
-          <h2 class="w3-text-teal">Decimal Numbers</h2>
-          <p>The Decimal numbers are nothing but zero and set of other counting numbers. In the number system, all the digits are placed to the left and right of the decimal point. All the decimal points let us know where the place of a specific number is.</p>
         </div>
       </div>
       <div class="w3-row" style="text-align: justify;">
         <div class="w3-twothird w3-container">
-          <h2 class="w3-text-teal">The decimal converter structure</h2>
-            <p>Just for an example, if you want to convert the decimal number to binary number then follow these steps. Firstly, divide the given number by 2. After you are dividing it by 2, get the float for the next iteration. Note the reminder for the binary digit. For example, if you enter the number "4422" in the textbox and you will get this answer: 1000101000110.</p><br>
+            <b>Binary to Decimal Conversion</b>
+            <p>If you want to convert binary to decimal, the decimal number is nothing but the sum of the given binary digits, (Xn) times the power of 2.<p><br>
+              <p>
+              decimal number = x0×20 + x1×21 + x2×22 + ...
+            </p>
+            <p>
+              So, it is the conversion formula, you can also use our tool. Just enter a binary number like "10001010111000" and the answer you get will be "10001010111000".
+            </p>
         </div>
         <div class="w3-third w3-container">
           <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
@@ -80,46 +84,50 @@
 import header from './header.vue';
 import footer from './footer.vue';
 import { BigNumber } from 'bignumber.js';
-
 export default {
 
   metaInfo: {
-     title: 'Decimal to Binary Online Converter | Convert Numbers with this tool',
+     title: 'Binary to Decimal converter | Zeros and ones to numbers translator',
      meta: [
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: 'With Decimal to Binary converter, get the numbers converted really easily. Get to know about the conversion process of binary to decimal and vice a versa.'}
+       {name: 'description', content: 'Best binary to decimal converter. Enter zeros and ones into the translator and get the decimal number with the help of our converter.'}
      ],
    },
+
   components:{
     'header-app': header,
-    'footer-app': footer
+    'footer-app': footer,
   },
   data () {
     return {
       text_value: null,
             ans: "",
+            anshex: "",
+            ansoct: ""
     }
   },
   methods: {
-    dectobin() {
-      var x = new BigNumber(this.text_value, 10)
-    var dectobin = x.toString(2);
-    this.ans = dectobin;
-            },
-      dectohex() {
-            var xzc = new BigNumber(this.text_value, 10)
-            var dectohexo = xzc.toString(16).toUpperCase ();
-            this.anshex = dectohexo;
-                    },
-                    dectooct() {
-                    var xmm = new BigNumber(this.text_value, 10)
-                    var dectoocto = xmm.toString(8);
-                    this.ansoct = dectoocto;
-                            },
+    bintodec() {
+      var cc = new BigNumber(this.text_value, 2);
+       this.ans = cc;
+     },
+     bintohex() {
+       var bin = this.text_value;
+       var m = new BigNumber(bin, 2)
+       var binn = m.toString(16);
+       this.anshex = binn;
+             },
+             bintooct() {
+               this.aaa = parseInt(this.text_value);
+               var bintooct = parseInt(this.aaa, 2).toString(8);
+               this.ansoct = bintooct;
+                     },
    reset() {
      this.ans = '',
-     this.text_value= null
+     this.text_value= null,
+     this.ansoct = '',
+     this.anshex = ''
    },
   }
 }
@@ -132,6 +140,5 @@ export default {
    border: 5px solid gray;
    padding: 10%;
    margin-left: 30%;
-
 }
 </style>

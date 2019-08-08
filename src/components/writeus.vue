@@ -22,8 +22,7 @@
             </p>
             <h3>What's the process?</h3>
             <p style="text-align: justify">Please do not start writing an article without our approval. Please share your idea along with the summary of your article at <b>aashay@lantechinfocom.com</b>
-              with the subject of <b>"Guest post on Binary to Text"</b>. Once we approve your idea, then you can start writing the content. We are also accepting
-              paid posts, for that mail us with the subject of <b>"Sponsered Post on Binary to Text"</b>.
+              with the subject of <b>"Guest post on Binary to Text"</b>. Once we approve your idea, then you can start writing the content.
             </p>
         </div>
         <div class="w3-third w3-container">
@@ -43,11 +42,11 @@ import footer from './footer.vue';
 export default {
 
   metaInfo: {
-     title: 'Write for Us in Technology, Lan, Coding, Conversion and Other Topics',
+     title: 'write for us and get exposure on the digital platform',
      meta: [
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: 'Write for us on these topics - Programming, Computer networking, Maths, Online tools'}
+       {name: 'description', content: 'Write for us and get perks from our website.'}
      ],
    },
 
@@ -59,7 +58,7 @@ export default {
     return {
 
     }
-  }
+  },
 }
 </script>
 

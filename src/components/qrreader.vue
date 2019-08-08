@@ -16,6 +16,7 @@
           <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
           <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
         </div>
+        
       </div>
       <div class="w3-row" style="text-align: justify;">
         <div class="w3-twothird w3-container">

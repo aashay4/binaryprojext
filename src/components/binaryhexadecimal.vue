@@ -5,24 +5,63 @@
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">Binary to Hexadecimal</h1>
-          <p>To use this converter, enter binary number into this text field and click on the button, "Binary to Hexadecimal", you will get the answer for the equivalent hexadecimal number of the binary number. For an example, enter the value "101011111" in the box and you will get an answer of "15F" as the answer. Just the same way, "8888" hex number to the equivalent answer, "1000100010001000" of this hex number.</p>
+          <p>To use this converter, enter binary number into this text field and click on the button, "Binary to Hexadecimal", you will get the answer for the equivalent hexadecimal number of the binary number. For example, enter the value "101011111" in the box and you will get an answer of "15F" as the answer.</p>
           <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/><br><br>
-          <button v-on:click="bintohex()" style="width: 33%">Binary to Hexadecimal</button>
-          <button v-on:click="hextobin()" style="width: 33%">Hexadecimal to binary</button>
-          <button v-on:click="reset()" style="width: 34%">clear all the fields</button><br><br>
+          <button v-on:click="bintohex()" style="width: 49%">Binary to Hexadecimal</button>
+          <button v-on:click="reset()" style="width: 49%">clear all the fields</button><br><br>
             <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll">Conversion: {{ ans }}</p>
-        </div>
+        </div><br>
         <div class="w3-third w3-container">
-          <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-          <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+          <h3 style="background-color: silver;">Other Useful Tools</h3>
+          <ul>
+            <router-link to="/">
+              <li>
+                Binary to Text
+              </li>
+            </router-link>
+            <router-link to="/ascii-to-binary">
+            <li>ASCII to Binary</li>
+          </router-link>
+          <router-link to="/decimal-to-binary">
+          <li>Decimal to Binary</li>
+        </router-link>
+        <router-link to="/binary-to-decimal">
+        <li>Binary to Decimal</li>
+      </router-link>
+            <router-link to="/decimal-to-hexadecimal">
+            <li>Decimal to Hexadecimal</li></router-link>
+            <router-link to="/decimal-to-octal">
+            <li>Decimal to Octal</li></router-link>
+            <router-link to="/binary-to-octal">
+            <li>Binary to Octal</li></router-link>
+            <router-link to="/hexadecimal-to-octal">
+            <li>Hexadecimal to Octal</li></router-link>
+            <router-link to="/qr-code-generator">
+            <li>QR Code Generator</li></router-link>
+            <router-link to="/qr-code-reader">
+            <li>QR Code Reader</li></router-link>
+          </ul><br><br>
+          <h3 style="background-color: silver;">Useful Resources</h3>
+          <ul>
+            <router-link to="/about-creator">
+            <li>About</li>
+          </router-link>
+            <router-link to="/blog">
+            <li>Blog</li>
+          </router-link>
+          </ul>
         </div>
       </div>
       <div class="w3-row" style="text-align: justify;">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">Hexadecimal Numbers</h1>
-          <p>The hexadecimal is a base-16 numbering system. The hexadecimal numbers are nothing but 0-9 and then use A to F. The conversion of hexadecimal number to the binary number is really simple. You can either use our tool or perform the conversion operation by your self.</p>
-          <p>The haxadecimal numbers are the modern way to show binary numbers to the computer systems. When showing the content from computer storage, one hexadecimal number can show the representation of four various binary numbers. Two hexadecimal numbers can represent eight binary digits and so on.</p>
+          <p>The hexadecimal is a base-16 numbering system. The hexadecimal numbers are nothing but 0-9 and then use A to F. The conversion of hexadecimal number to the binary number is simple. You can either use our tool or perform the conversion operation by your self.</p>
+          <p>The hexadecimal numbers are the modern way to show binary numbers to the computer systems. When showing the content from computer storage, one hexadecimal number can show the representation of four various binary numbers. Two hexadecimal numbers can represent eight binary digits and so on.</p>
           <p>You can have a look at different values of hex numbers along with zeros and one in the table below!</p>
+          <h2 class="w3-text-teal">How to convert binary to hexadecimal?</h2>
+          <article>
+            As we all know, binary numbers are only zeros and ones, and no other number can be placed in place of these numbers. Where, exadecimal numbers contain either 0-9 numbers or A-F letters. Apart from that, hexadecimal is base - 16, it possible to convert any given binary numbers to the hex number but the only condition required is you need atleast four base 2 numbers to make any kind of conversion. To convert from binary number to the hex number, you need to the binary into the groups of 4 and process those four numbers to get desired result. You can also use our tool to get the accurate answer.
+          </article><br>
           <table style="width:25%">
   <tr>
     <th>Hex</th>
@@ -134,9 +173,6 @@ export default {
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
        {name: 'description', content: 'Binary to Hexadecimal converter. The simplest online translator of hexadecimal to binary conversions. Visit here and get answers!'}
      ],
-     links: [
-       {rel: 'canonical', href: 'http://binarytotext.net/binary-to-hexadecimal/'}
-     ],
    },
 
   components:{
@@ -156,12 +192,6 @@ export default {
       var binn = m.toString(16);
       this.ans = binn;
             },
-    hextobin() {
-      var hex = this.text_value;
-      var x = new BigNumber(hex, 16);
-      var dect = x.toString(2);
-      this.ans = dect;
-     },
    reset() {
      this.ans = '',
      this.text_value= null
