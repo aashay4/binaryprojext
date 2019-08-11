@@ -10,7 +10,7 @@ If you want to convert text to binary, then enter any text into the text box and
 </p>
           <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/><br><br>
           <button v-on:click="binarytotext()" style="width: 32%">Binary to Text</button>
-          <button v-on:click="texttobinary()" style="width: 32%">Text to Binary</button>
+          <button v-on:click="texttobinary()" style="width: 33%">Text to Binary</button>
           <button v-on:click="reset()" style="width: 33%">clear all fields</button><br><br>
             <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll"><b>Conversion:</b> {{ ans }}</p><br><br>
             <h1 class="w3-text-teal">Binary Translator</h1>
@@ -82,7 +82,6 @@ If you want to convert text to binary, then enter any text into the text box and
 <script>
 import header from './header.vue';
 import footer from './footer.vue';
-import { BigNumber } from 'bignumber.js';
 import binarytranslator from './binarytranslator.vue';
 
 export default {

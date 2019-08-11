@@ -1,7 +1,7 @@
 <template>
   <div>
           <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/><br><br>
-          <button v-on:click="binarytotext(); bintodec(); bintooct(); bintohex();" style="width: 49%">Convert</button>
+          <button v-on:click="binarytotext(); bintodec(); bintooct(); bintohex();" style="width: 50%">Convert</button>
           <button v-on:click="reset()" style="width: 49%">clear all fields</button><br><br>
             <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll"><b>To text Conversion:</b> {{ ans }}</p><br><br><br><br>
             <h3><b>({{ text_value}}) to Dec - Base-10</b></h3>

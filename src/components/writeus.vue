@@ -21,7 +21,8 @@
               Lantech Infocom, a computer networking company.
             </p>
             <h3>What's the process?</h3>
-            <p style="text-align: justify">Please do not start writing an article without our approval. Please share your idea along with the summary of your article at <b>aashay@lantechinfocom.com</b>
+            <p style="text-align: justify">Please do not start writing an article without our approval. Please share your idea along with the summary of your article at <b>texttobinary4@gmail.com
+</b>
               with the subject of <b>"Guest post on Binary to Text"</b>. Once we approve your idea, then you can start writing the content.
             </p>
         </div>
