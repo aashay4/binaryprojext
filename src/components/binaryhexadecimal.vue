@@ -7,8 +7,9 @@
           <h1 class="w3-text-teal">Binary to Hexadecimal</h1>
           <p>To use this converter, enter binary number into this text field and click on the button, "Binary to Hexadecimal", you will get the answer for the equivalent hexadecimal number of the binary number. For example, enter the value "101011111" in the box and you will get an answer of "15F" as the answer.</p>
           <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/><br><br>
-          <button v-on:click="bintohex()" style="width: 49%">Binary to Hexadecimal</button>
-          <button v-on:click="reset()" style="width: 49%">clear all the fields</button><br><br>
+          <button v-on:click="bintohex()" style="width: 33%">Binary to Hexadecimal</button>
+          <button v-on:click="hextobin()" style="width: 33%">Hexadecimal to Binary</button>
+          <button v-on:click="reset()" style="width: 33%">clear all the fields</button><br><br>
             <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll">Conversion: {{ ans }}</p>
         </div><br>
         <div class="w3-third w3-container">
@@ -192,10 +193,16 @@ export default {
       var binn = m.toString(16);
       this.ans = binn;
             },
+            hextobin() {
+              var hex = this.text_value;
+              var x = new BigNumber(hex, 16);
+              var dect = x.toString(2);
+              this.ans = dect;
+            },
    reset() {
      this.ans = '',
      this.text_value= null
-   },
+   }
   }
 }
 </script>

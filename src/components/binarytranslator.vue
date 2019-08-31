@@ -25,7 +25,6 @@ export default {
       text_value: null,
             ans: "",
             aaa: null,
-            title: 'Binary to Text Converter(Translator)',
             btod: "",
             btoo: "",
             xxx: null,
@@ -60,8 +59,11 @@ export default {
             },
    reset() {
      this.ans = '',
-     this.text_value= null
-   },
+     this.text_value= null,
+     this.btod= '',
+     this.btoo= '',
+     this.btoh= ''
+   }
   }
 }
 </script>
