@@ -1,6 +1,14 @@
 <template>
   <div>
     <header-app></header-app>
+    <Adsense
+    class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-6829148792481216"
+    data-ad-slot="1665700659"
+    data-ad-format="auto"
+    data-full-width-responsive="true">
+</Adsense>
     <div class="w3-main" style="margin-left:250px">
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
@@ -71,6 +79,7 @@
 <script>
 import header from '@/components/header.vue';
 import footer from '@/components/footer.vue';
+import Adsense from 'vue-google-adsense/dist/Adsense.min.js'
 
 export default {
 

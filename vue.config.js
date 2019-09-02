@@ -12,9 +12,6 @@ module.exports = {
           path.resolve(__dirname, 'dist'),
           // List of routes to prerender
           [ '/', '/binary-to-hexadecimal', '/hexadecimal-to-decimal', '/wake-on-lan', '/lan-local-area-network', '/octal-to-binary-converter', '/decimal-to-binary', '/octal-to-decimal', '/decimal-to-hexadecimal', '/hexadecimal-to-octal', '/decimal-to-octal', '/hexadecimal-to-binary-converter', '/qr-code-reader', '/qr-code-generator', '/about-creator', '/blog', '/binary-to-decimal', '/binary-to-octal', '/write-for-us', '/ascii-to-binary'],
-          {
-              // options
-          }
         ),
       ]
     }
