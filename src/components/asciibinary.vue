@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header-app></header-app>
+    <header-app></header-app><br><br>
     <Adsense
     class="adsbygoogle"
     style="display:block"
