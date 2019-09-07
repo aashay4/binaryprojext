@@ -23,7 +23,7 @@ data-ad-client="ca-pub-6829148792481216"
 data-ad-slot="1416243045"
 data-ad-format="auto"
 data-full-width-responsive="true">
-</Adsense>
+</Adsense><br><br>
           <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/><br><br>
           <button v-on:click="binarytotext()" style="width: 33%">Binary to Text</button>
           <button v-on:click="texttobinary()" style="width: 33%">Text to Binary</button>
