@@ -17,7 +17,7 @@
 If you want to convert text to binary, then enter any text into the text box and click on the button “Text to binary”. You will get the equivalent binary value in the converter.
 </p>
 <Adsense
-class="adsbygoogle"
+class="adsbygoogle w3-twothird w3-container"
 style="display:block"
 data-ad-client="ca-pub-6829148792481216"
 data-ad-slot="1416243045"
