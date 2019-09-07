@@ -28,7 +28,7 @@ export default {
             btod: "",
             btoo: "",
             xxx: null,
-            btoh: ""
+            btoh: "",
     }
   },
   methods: {
@@ -44,18 +44,42 @@ export default {
       },
       bintodec() {
         var cc = new BigNumber(this.text_value, 2);
-         this.btod = cc;
+        if (isNaN(cc))
+        {
+          this.btod = 'This number cannot be converted into Decimal'
+
+      }
+      else {
+      this.btod = cc;
+      }
+
      },
      bintooct() {
       this.xxx = parseInt(this.text_value);
       var bintooct = parseInt(this.xxx, 2).toString(8);
-      this.btoo = bintooct;
+      if (isNaN(bintooct))
+      {
+        this.btoo = 'This number cannot be converted into Octal'
+
+    }
+    else {
+    this.btoo = bintooct;
+    }
+
             },
-            bintohex() {
+
+      bintohex() {
       var binnn = this.text_value;
       var mol = new  BigNumber(binnn, 2)
       var binnx = mol.toString(16);
+      if (isNaN(binnx))
+      {
+        this.btoh = 'This number cannot be converted into Hex'
+
+    }
+    else {
       this.btoh = binnx;
+    }
             },
    reset() {
      this.ans = '',
