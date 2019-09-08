@@ -174,6 +174,10 @@ export default new Router({
     {
       path: '*',
       redirect: '/404'
+    },
+    {
+      path: '/blog/wake-on-lan',
+      redirect: '/wake-on-lan'
     }
   ]
 })
