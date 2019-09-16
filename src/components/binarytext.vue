@@ -2,8 +2,8 @@
   <div>
     <header-app></header-app><br><br>
     <Adsense
-    class="adsbygoogle w3-twothird w3-container"
-    style="display:block"
+    class="w3-main adsbygoogle w3-twothird w3-container"
+    style="display:block; margin-left:250px"
     data-ad-client="ca-pub-6829148792481216"
     data-ad-slot="1665700659"
     data-ad-format="auto"
