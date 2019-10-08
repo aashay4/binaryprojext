@@ -1,21 +1,11 @@
 <template>
   <div>
     <header-app></header-app><br><br>
-    <Adsense
-    class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-6829148792481216"
-    data-ad-slot="1665700659"
-    data-ad-format="auto"
-    data-full-width-responsive="true">
-</Adsense>
     <div class="w3-main" style="margin-left:250px">
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
-          <h1 class="w3-text-teal">Binary To Text</h1>
-          <p>To use the binary to text tool, enter a binary number into the box, click on the button and get the equivalent text into the output. For example, insert “01000011 01101111 01101110 01110110 01100101 01110010 01110100” into the box and click on the button, you will get the text string “Convert”.
-If you want to convert text to binary, then enter any text into the text box and click on the button “Text to binary”. You will get the equivalent binary value in the converter.
-</p>
+          <h1 class="w3-text-teal">Binary Converter</h1>
+          <p>Full Binary converter, Enter a binary value and click on the button. You will get from binary to hex, dec, oct and text values.</p>
 <Adsense
 class="adsbygoogle w3-twothird w3-container"
 style="display:block"
@@ -24,14 +14,7 @@ data-ad-slot="1416243045"
 data-ad-format="auto"
 data-full-width-responsive="true">
 </Adsense><br><br>
-          <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/><br><br>
-          <button v-on:click="binarytotext()" style="width: 33%">Binary to Text</button>
-          <button v-on:click="texttobinary()" style="width: 33%">Text to Binary</button>
-          <button v-on:click="reset()" style="width: 33%">clear all fields</button><br><br>
-            <div class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow-y: scroll;"><b>Conversion:</b> {{ ans }}</div><br><br>
-            <h1 class="w3-text-teal">Binary Translator</h1>
             <div>
-              <p>Want to convert dec, hex or oct to the equivalent binary number? Here is the full binary translator. Please find it below. Enter any binary number in the box and click of the conversion, you will find out the conversion of that binary number into its equivalent hex, dec or octal number in just a second with our binary translator.</p>
             <binarytranslator />
           </div>
         </div><br>
@@ -46,22 +29,22 @@ data-full-width-responsive="true">
               Decimal to Binary
             </li>
           </router-link>
-            <router-link to="/binary-to-hexadecimal">
-            <li>Binary to Hexadecimal</li></router-link>
+            <router-link to="/decimal-to-binary">
+            <li>Decimal to Binary Converter</li></router-link>
             <router-link to="/decimal-to-hexadecimal">
             <li>Decimal to Hexadecimal</li></router-link>
             <router-link to="/decimal-to-octal">
             <li>Decimal to Octal</li></router-link>
-            <router-link to="/binary-to-octal">
-            <li>Binary to Octal</li></router-link>
-            <router-link to="/hexadecimal-to-octal">
+            <router-link to="/octal-to-binary">
+            <li>Octal to Binary Converter</li></router-link>
+              <router-link to="/hexadecimal-to-binary-converter">
+              <li>Hexadecimal to Binary Converter</li></router-link>
+              <router-link to="/hexadecimal-to-octal">
             <li>Hexadecimal to Octal</li></router-link>
             <router-link to="/qr-code-generator">
             <li>QR Code Generator</li></router-link>
             <router-link to="/qr-code-reader">
             <li>QR Code Reader</li></router-link>
-            <router-link to="/binary-converter">
-            <li>Binary Converter</li></router-link>
           </ul><br><br>
           <h3 style="background-color: silver;">Useful Resources</h3>
           <ul>
@@ -77,19 +60,8 @@ data-full-width-responsive="true">
 
       <div class="w3-row" style="text-align: justify;">
         <div class="w3-twothird w3-container">
-          <h1 class="w3-text-teal">Binary</h1>
-            <p>Binary is just a number system that uses only two digits, o and 1 to rectify different queries. This number system one of the most popular systems in modern computer processing, electronics, wireless networking systems, data process over a network layer. A computer system can only understand the binary numbers and for that reason, it has become one of the most popular terms in the digital world.</p>
-        </div>
-      </div>
-
-      <div class="w3-row w3-padding-64" style="text-align: justify;">
-        <div class="w3-twothird w3-container">
-          <h1 class="w3-text-teal">How to convert Binary to Text?</h1>
-          <p>For example, if you want to convert a binary number "01000001" into its equivalent text number. Take the first eight characters binary given to you(That's probably 01000001) and convert it into the ASCII values. Now find out the ASCII value of the specific character. And you will get the number "A" for that binary number. If you have been given number (0100000101010111). Now take the first eight characters, find the equivalent text number. After the completion, take another eight characters and find their relevant values.</p>
-        </div>
-        <div class="w3-third w3-container">
-          <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-          <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+          <h1 class="w3-text-teal">How to Use this Binary Converter?</h1>
+            <p>To use this 01100010 01101001 01101110 01100001 01110010 01111001 onverter, just enter the binary numbers in the box above and click on the convert button, you will get the answers for the given number in just a few seconds. The number entered by you will be converted into dec, oct, hex and text values. If the numbers cannot be converted then you will receinve a message for the same.</p>
         </div>
       </div>
       <footer-app></footer-app>
@@ -104,16 +76,15 @@ import binarytranslator from './binarytranslator.vue';
 import Adsense from 'vue-google-adsense/dist/Adsense.min.js'
 
 export default {
-
   metaInfo: {
-     title: 'Binary to Text Converter(Translator)',
+     title: 'Binary Converter, Convert from binary to dec, hex, oct and text values.',
      meta: [
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: 'Convert binary to text with this free translator. Just enter zeros and ones and convert it into the equivalent text values with this free binary translator.'}
+       {name: 'description', content: ''}
      ],
      link: [
-    {rel: 'canonical', href: 'http://binarytotext.net/'}
+    {rel: 'canonical', href: 'http://binarytotext.net/binary-converter'}
   ]
    },
 

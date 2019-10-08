@@ -34,7 +34,10 @@ export default {
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
        {name: 'description', content: 'Aashay Trivedi is the creator of this tool.'}
-     ]
+     ],
+     link: [
+    {rel: 'canonical', href: 'http://binarytotext.net/about-creator/'}
+  ]
    },
 
   components:{

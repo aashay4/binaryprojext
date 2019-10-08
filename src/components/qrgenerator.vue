@@ -51,9 +51,9 @@ export default {
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
        {name: 'description', content: 'Best online QR code reader. Visit our website and scan QR codes very easily.'}
      ],
-     links: [
-       {rel: 'canonical', href: 'http://binarytotext.net/qr-code-reader'}
-     ]
+     link: [
+    {rel: 'canonical', href: 'http://binarytotext.net/qr-code-reader'}
+  ]
    },
 
   components:{

@@ -90,6 +90,9 @@ export default {
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
        {name: 'description', content: 'With Decimal to Binary converter, get the numbers converted really easily. Get to know about the conversion process of binary to decimal and vice a versa.'}
      ],
+     link: [
+    {rel: 'canonical', href: 'http://binarytotext.net/decimal-to-binary'}
+  ]
    },
   components:{
     'header-app': header,

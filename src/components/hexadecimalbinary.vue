@@ -79,6 +79,9 @@ export default {
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
        {name: 'description', content: 'Convert hexadecimal to binary numbers with this tool. Enter a hex number and get the equivalent base 2 number easily with this amazing tool.'}
      ],
+     link: [
+    {rel: 'canonical', href: 'http://binarytotext.net/hexadecimal-to-binary-converter'}
+  ]
    },
   components:{
     'header-app': header,

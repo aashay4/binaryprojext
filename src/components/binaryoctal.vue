@@ -74,6 +74,9 @@ export default {
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
        {name: 'description', content: 'Looking for a binary to octal converter? Try our online converter totally for free.'}
      ],
+     link: [
+    {rel: 'canonical', href: 'http://binarytotext.net/binary-to-octal/'}
+  ]
    },
   components:{
     'header-app': header,

@@ -162,6 +162,9 @@ export default {
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
        {name: 'description', content: 'Convert hexadecimal to octal numbers very easily with the help of our number converter. You can also convert octal to the hex numbers.'}
      ],
+     link: [
+    {rel: 'canonical', href: 'http://binarytotext.net/hexadecimal-to-octal/'}
+  ]
    },
   components:{
     'header-app': header,

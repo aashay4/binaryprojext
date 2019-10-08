@@ -22,6 +22,7 @@ import lan from './components/lan.vue'
 import octalbinary from './components/octalbinary.vue'
 import octaldecimal from './components/octaldecimal.vue'
 import wakeonlan from './components/wake-on-lan.vue'
+import binaryconverter from './components/binaryconverter.vue'
 
 Vue.use(Router)
 Vue.use(Meta)
@@ -178,6 +179,13 @@ export default new Router({
     {
       path: '/blog/wake-on-lan',
       redirect: '/wake-on-lan'
+    },
+    {
+      path: '/binary-converter/',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './components/binaryconverter.vue')
     }
   ]
 })

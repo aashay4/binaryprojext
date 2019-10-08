@@ -49,6 +49,9 @@ export default {
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
        {name: 'description', content: 'Write for us and get perks from our website.'}
      ],
+     link: [
+    {rel: 'canonical', href: 'http://binarytotext.net/write-for-us/'}
+  ]
    },
 
   components:{

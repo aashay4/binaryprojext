@@ -16,7 +16,7 @@
           <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
           <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
         </div>
-        
+
       </div>
       <div class="w3-row" style="text-align: justify;">
         <div class="w3-twothird w3-container">
@@ -55,9 +55,9 @@ export default {
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
        {name: 'description', content: 'Generator QR codes easily with our free online tool – QR Code Generator. Visit the website and generate the QR code in the most pleasant way.'}
      ],
-     links: [
-       {rel: 'canonical', href: 'http://binarytotext.net/qr-code-generator'}
-     ]
+     link: [
+    {rel: 'canonical', href: 'http://binarytotext.net/qr-code-generator/'}
+  ]
    },
   components:{
     'header-app': header,

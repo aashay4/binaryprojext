@@ -174,6 +174,9 @@ export default {
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
        {name: 'description', content: 'Binary to Hexadecimal converter. The simplest online translator of hexadecimal to binary conversions. Visit here and get answers!'}
      ],
+     link: [
+    {rel: 'canonical', href: 'http://binarytotext.net/binary-to-hexadecimal/'}
+  ]
    },
 
   components:{

@@ -77,6 +77,9 @@ export default {
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
        {name: 'description', content: 'An online Decimal to octal converter. Convert base 10 to base 8.'}
      ],
+     link: [
+    {rel: 'canonical', href: 'http://binarytotext.net/decimal-to-octal/'}
+  ]
    },
   components:{
     'header-app': header,

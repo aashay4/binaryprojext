@@ -90,6 +90,9 @@ export default {
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
        {name: 'description', content: 'Convert ASCII to binary numbers. Visit this free tool and convert text to binary in the least amount of time.'}
      ],
+     link: [
+    {rel: 'canonical', href: 'http://binarytotext.net/ascii-to-binary/'}
+  ]
    },
 
   components:{

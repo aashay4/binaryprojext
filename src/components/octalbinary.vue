@@ -157,6 +157,9 @@ export default {
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
        {name: 'description', content: 'Convert octal to binary number with the help of this free tool.'}
      ],
+     link: [
+    {rel: 'canonical', href: 'http://binarytotext.net/octal-to-binary/'}
+  ]
    },
 
   components:{
