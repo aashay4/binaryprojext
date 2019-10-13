@@ -6,7 +6,12 @@
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">Binary To Text</h1>
           <p>To use the binary to text tool, enter a binary number into the box, click on the button and get the equivalent text into the output. For example, insert “01000011 01101111 01101110 01110110 01100101 01110010 01110100” into the box and click on the button, you will get the text string “Convert”.
-If you want to convert text to binary, then enter any text into the text box and click on the button “Text to binary”. You will get the equivalent binary value with our binary translator.
+If you want to convert text to binary, then enter any text into the text box and click on the button “Text to binary”. You will get the equivalent binary value with our binary translator.<br><br>
+<b>Perks of Using Binary to Text:</b>
+<ul>
+  <li>This is a progressive web application</li>
+  <li>Once the page is loaded, you can use this website <b>offline</b> as well. Try it, since you are on this page, turn off your internet and you will find out that you can still use our tool withour the internet. You can also nevigate to other two or three pages and use the binary translator offline.</li>
+</ul>
 </p>
 <Adsense
 class="adsbygoogle w3-twothird w3-container"
