@@ -46,7 +46,7 @@ data-full-width-responsive="true">
               Decimal to Binary
             </li>
           </router-link>
-          <router-link to="/hexadecimal-to-binary-translator">
+          <router-link to="/hexadecimal-to-binary-converter">
             <li>
               Hexadecimal to Binary Translator
             </li>
