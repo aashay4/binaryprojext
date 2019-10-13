@@ -1,20 +1,12 @@
 <template>
   <div>
-    <header-app></header-app><br><br>
-    <Adsense
-    class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-6829148792481216"
-    data-ad-slot="1665700659"
-    data-ad-format="auto"
-    data-full-width-responsive="true">
-</Adsense>
+    <header-app></header-app>
     <div class="w3-main" style="margin-left:250px">
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">Binary To Text</h1>
           <p>To use the binary to text tool, enter a binary number into the box, click on the button and get the equivalent text into the output. For example, insert “01000011 01101111 01101110 01110110 01100101 01110010 01110100” into the box and click on the button, you will get the text string “Convert”.
-If you want to convert text to binary, then enter any text into the text box and click on the button “Text to binary”. You will get the equivalent binary value in the converter.
+If you want to convert text to binary, then enter any text into the text box and click on the button “Text to binary”. You will get the equivalent binary value with our binary translator.
 </p>
 <Adsense
 class="adsbygoogle w3-twothird w3-container"
@@ -29,6 +21,14 @@ data-full-width-responsive="true">
           <button v-on:click="texttobinary()" style="width: 33%">Text to Binary</button>
           <button v-on:click="reset()" style="width: 33%">clear all fields</button><br><br>
             <div class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow-y: scroll;"><b>Conversion:</b> {{ ans }}</div><br><br>
+            <Adsense
+            class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-6829148792481216"
+            data-ad-slot="1416243045"
+            data-ad-format="auto"
+            data-full-width-responsive="true">
+            </Adsense><br><br>
             <h1 class="w3-text-teal">Binary Translator</h1>
             <div>
               <p>Want to convert dec, hex or oct to the equivalent binary number? Here is the full binary translator. Please find it below. Enter any binary number in the box and click of the conversion, you will find out the conversion of that binary number into its equivalent hex, dec or octal number in just a second with our binary translator.</p>
@@ -44,6 +44,11 @@ data-full-width-responsive="true">
           <router-link to="/decimal-to-binary">
             <li>
               Decimal to Binary
+            </li>
+          </router-link>
+          <router-link to="/hexadecimal-to-binary-translator">
+            <li>
+              Hexadecimal to Binary Translator
             </li>
           </router-link>
             <router-link to="/binary-to-hexadecimal">
@@ -78,18 +83,14 @@ data-full-width-responsive="true">
       <div class="w3-row" style="text-align: justify;">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">Binary</h1>
-            <p>Binary is just a number system that uses only two digits, o and 1 to rectify different queries. This number system one of the most popular systems in modern computer processing, electronics, wireless networking systems, data process over a network layer. A computer system can only understand the binary numbers and for that reason, it has become one of the most popular terms in the digital world.</p>
+            <p>Binary is just a number system that uses only two digits, o and 1 to rectify different queries. This number system one of the most popular systems in modern computer processing, electronics, wireless networking systems, data process over a network layer. A computer system can only understand the binary numbers and for that reason, it has become one of the most popular terms in the digital world. You can use this binary translator for the binary to text conversion. It is a progressive web application which will work offline as well. You can nevigate to the different pages and still use it if you are offline.</p>
         </div>
       </div>
 
       <div class="w3-row w3-padding-64" style="text-align: justify;">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">How to convert Binary to Text?</h1>
-          <p>For example, if you want to convert a binary number "01000001" into its equivalent text number. Take the first eight characters binary given to you(That's probably 01000001) and convert it into the ASCII values. Now find out the ASCII value of the specific character. And you will get the number "A" for that binary number. If you have been given number (0100000101010111). Now take the first eight characters, find the equivalent text number. After the completion, take another eight characters and find their relevant values.</p>
-        </div>
-        <div class="w3-third w3-container">
-          <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-          <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+          <p>For example, if you want to convert a binary number "01000001" into its equivalent text number. Take the first eight characters binary given to you(That's probably 01000001) and convert it into the ASCII values. Now find out the ASCII value of the specific character. And you will get the number "A" for that binary number. If you have been given number (0100000101010111). Now take the first eight characters, find the equivalent text number. After the completion, take another eight characters and find their relevant values. Once you have converted the values, you can take help of our binary to text tool to check out the answer of the given number.</p>
         </div>
       </div>
       <footer-app></footer-app>
