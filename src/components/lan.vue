@@ -100,7 +100,7 @@ export default {
        {name: 'description', content: 'Local area network is a network which connects various systems which are in the same network. Switches, routers, etnernet cables are the important components.'}
      ],
      link: [
-    {rel: 'canonical', href: 'http://binarytotext.net/lan-local-area-network/'}
+    {rel: 'canonical', href: 'http://binarytotext.net/lan-local-area-network'}
   ]
    },
   components:{

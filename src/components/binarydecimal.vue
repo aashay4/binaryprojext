@@ -94,7 +94,7 @@ export default {
        {name: 'description', content: 'Best binary to decimal converter. Enter zeros and ones into the translator and get the decimal number with the help of our converter.'}
      ],
      link: [
-    {rel: 'canonical', href: 'http://binarytotext.net/binary-to-decimal/'}
+    {rel: 'canonical', href: 'http://binarytotext.net/binary-to-decimal'}
   ]
    },
 

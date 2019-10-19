@@ -36,7 +36,7 @@ export default {
        {name: 'description', content: 'Aashay Trivedi is the creator of this tool.'}
      ],
      link: [
-    {rel: 'canonical', href: 'http://binarytotext.net/about-creator/'}
+    {rel: 'canonical', href: 'http://binarytotext.net/about-creator'}
   ]
    },
 

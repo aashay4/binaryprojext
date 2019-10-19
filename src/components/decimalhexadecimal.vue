@@ -84,7 +84,7 @@ export default {
        {name: 'description', content: 'Best decimal to hexadecimal converter. Get the answers about the conversions and learn how to convert decimal number to a hexadecimal.'}
      ],
      link: [
-    {rel: 'canonical', href: 'http://binarytotext.net/decimal-to-hexadecimal/'}
+    {rel: 'canonical', href: 'http://binarytotext.net/decimal-to-hexadecimal'}
   ]
    },
   components:{
