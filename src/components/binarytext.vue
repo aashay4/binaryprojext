@@ -83,7 +83,7 @@ data-full-width-responsive="true">
       <div class="w3-row" style="text-align: justify;">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">Binary</h1>
-            <p>Binary is just a number system that uses only two digits, o and 1 to rectify different queries. This number system one of the most popular systems in modern computer processing, electronics, wireless networking systems, data process over a network layer. A computer system can only understand the binary numbers and for that reason, it has become one of the most popular terms in the digital world. You can use this binary translator for the binary to text conversion. It is a progressive web application which will work offline as well. You can nevigate to the different pages and still use it if you are offline.</p>
+            <p>Binary is just a number system that uses only two digits, o and 1 to rectify different queries. This number system one of the most popular systems in modern computer processing, electronics, wireless networking systems, data process over a network layer. A computer system can only understand the binary numbers and for that reason, it has become one of the most popular terms in the digital world. You can use this binary translator for the binary to text conversion.</p>
         </div>
       </div>
 
@@ -107,7 +107,7 @@ import Adsense from 'vue-google-adsense/dist/Adsense.min.js'
 export default {
 
   metaInfo: {
-     title: 'Binary to Text Converter(Translator)',
+     title: 'Binary to Text Converter (Binary Translator)',
      meta: [
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
