@@ -1,15 +1,15 @@
 <template>
-  <div>
+  <div class="w3-hover-shadow w3-panel w3-leftbar w3-light-grey" style="height: 932px;"><br><br>
           <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/><br><br>
-          <button v-on:click="binarytotext(); bintodec(); bintooct(); bintohex();" style="width: 50%">Convert</button>
-          <button v-on:click="reset()" style="width: 49%">clear all fields</button><br><br>
-            <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll"><b>To text Conversion:</b> {{ ans }}</p><br><br><br><br>
+          <button v-on:click="binarytotext(); bintodec(); bintooct(); bintohex();" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">Convert</button>
+          <button v-on:click="reset()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">clear all fields</button><br><br>
+            <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; height: 110px; overflow: scroll;"><b>To text Conversion:</b> {{ ans }}</p><br><br><br><br>
             <h3><b>({{ text_value}}) to Dec - Base-10</b></h3>
-              <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll"><b>Conversion:</b> {{ btod }}</p>
+              <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; height: 110px; overflow: scroll;"><b>Conversion:</b> {{ btod }}</p>
               <h3><b>({{ text_value}}) to Oct - Base-8</b></h3>
-                <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll"><b>Conversion:</b> {{ btoo }}</p>
+                <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; height: 110px; overflow: scroll;"><b>Conversion:</b> {{ btoo }}</p>
                 <h3><b>({{ text_value}}) to Hex - Base-16</b></h3>
-                  <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll"><b>Conversion:</b> {{ btoh }}</p>
+                  <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; height: 110px; overflow: scroll;"><b>Conversion:</b> {{ btoh }}</p>
         </div>
 </template>
 
@@ -25,10 +25,11 @@ export default {
       text_value: null,
             ans: "",
             aaa: null,
-            btod: "",
+            btod: null,
             btoo: "",
             xxx: null,
             btoh: "",
+            fa: null,
     }
   },
   methods: {
@@ -43,7 +44,8 @@ export default {
         }
       },
       bintodec() {
-        var cc = new BigNumber(this.text_value, 2);
+        this.fa = parseInt(this.text_value);
+        var cc = new BigNumber(parseInt(this.text_value, 2));
         if (isNaN(cc))
         {
           this.btod = 'This number cannot be converted into Decimal'

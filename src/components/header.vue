@@ -7,13 +7,13 @@
     <a class="w3-bar-item w3-button">Home</a>
     </router-link>
     <a v-on:click='isclose = !isclose' class="w3-bar-item w3-button w3-right w3-hover-white w3-hide-large w3-hide-medium w3-large w3-theme-l1" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
-    <router-link to="/about-creator" class="nav-link">
-    <a href="/about-creator" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Creator</a>
+    <router-link to="/about-creator/" class="nav-link">
+    <a class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Creator</a>
     </router-link>
-    <router-link to="/blog" class="nav-link">
+    <router-link to="/blog/" class="nav-link">
     <a class="w3-bar-item w3-button w3-hide-small w3-hover-white">Blog</a>
     </router-link>
-    <router-link to="/write-for-us" class="nav-link">
+    <router-link to="/write-for-us/" class="nav-link">
     <a class="w3-bar-item w3-button w3-hide-small w3-hover-white">Write for us</a>
   </router-link>
   </div>
@@ -23,13 +23,13 @@
   <nav class="w3-sidebarr w3-bar-block w3-large w3-theme-l5 w3-animate-right">
     <a href="javascript:void(0)" v-on:click='isclose = !isclose' class="w3-left w3-xlarge w3-padding-large w3-hover-black"><i class="fa fa-remove"></i></a>
     <h4 class="w3-bar-item"><b>Options</b></h4>
-    <router-link to="/about-creator" class="nav-link">
+    <router-link to="/about-creator/" class="nav-link">
     <a class="w3-bar-item w3-button w3-hover-black">About Creator</a>
     </router-link>
-    <router-link to="/blog" class="nav-link">
+    <router-link to="/blog/" class="nav-link">
     <a class="w3-bar-item w3-button w3-hover-black">Blog</a>
     </router-link>
-    <router-link to="/write-for-us" class="nav-link">
+    <router-link to="/write-for-us/" class="nav-link">
     <a class="w3-bar-item w3-button w3-hover-black">Write for us</a>
     </router-link>
   </nav>
@@ -38,46 +38,46 @@
 <nav class="w3-sidebar w3-bar-block w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
   <a href="javascript:void(0)" v-on:click='isOpen = !isOpen' class="w3-right w3-xlarge w3-padding-large w3-hover-black"><i class="fa fa-remove"></i></a>
   <h4 class="w3-bar-item"><b>Converter</b></h4>
-  <router-link to="/ascii-to-binary" class="nav-link">
+  <router-link to="/ascii-to-binary/" class="nav-link">
   <a class="w3-bar-item w3-button w3-hover-black">ASCII to Binary</a>
   </router-link>
-  <router-link to="/decimal-to-binary" class="nav-link">
+  <router-link to="/decimal-to-binary/" class="nav-link">
   <a class="w3-bar-item w3-button w3-hover-black">Decimal to Binary</a>
   </router-link>
-  <router-link to="/binary-to-decimal" class="nav-link">
+  <router-link to="/binary-to-decimal/" class="nav-link">
   <a class="w3-bar-item w3-button w3-hover-black">Binary to Decimal</a>
   </router-link>
-  <router-link to="/binary-to-hexadecimal" class="nav-link">
+  <router-link to="/binary-to-hexadecimal/" class="nav-link">
   <a class="w3-bar-item w3-button w3-hover-black">Binary to Hexadecimal</a>
   </router-link>
-  <router-link to="/hexadecimal-to-binary-converter" class="nav-link">
+  <router-link to="/hexadecimal-to-binary-converter/" class="nav-link">
   <a class="w3-bar-item w3-button w3-hover-black">Hexadecimal to Binary</a>
   </router-link>
-  <router-link to="/decimal-to-hexadecimal" class="nav-link">
+  <router-link to="/decimal-to-hexadecimal/" class="nav-link">
   <a class="w3-bar-item w3-button w3-hover-black">Decimal to Hexadecimal</a>
   </router-link>
-  <router-link to="/hexadecimal-to-decimal" class="nav-link">
+  <router-link to="/hexadecimal-to-decimal/" class="nav-link">
   <a class="w3-bar-item w3-button w3-hover-black">Hexadecimal to Decimal</a>
   </router-link>
-  <router-link to="/decimal-to-octal" class="nav-link">
+  <router-link to="/decimal-to-octal/" class="nav-link">
   <a class="w3-bar-item w3-button w3-hover-black">Decimal to Octal</a>
   </router-link>
-  <router-link to="/octal-to-decimal" class="nav-link">
+  <router-link to="/octal-to-decimal/" class="nav-link">
   <a class="w3-bar-item w3-button w3-hover-black">Octal to Decimal</a>
   </router-link>
-  <router-link to="/binary-to-octal" class="nav-link">
+  <router-link to="/binary-to-octal/" class="nav-link">
   <a class="w3-bar-item w3-button w3-hover-black">Binary to Octal</a>
   </router-link>
-  <router-link to="/octal-to-binary-converter" class="nav-link">
+  <router-link to="/octal-to-binary-converter/" class="nav-link">
   <a class="w3-bar-item w3-button w3-hover-black">Octal to Binary</a>
   </router-link>
-  <router-link to="/hexadecimal-to-octal" class="nav-link">
+  <router-link to="/hexadecimal-to-octal/" class="nav-link">
   <a class="w3-bar-item w3-button w3-hover-black">Hexadecimal to Octal</a>
   </router-link>
-  <router-link to="/qr-code-reader" class="nav-link">
+  <router-link to="/qr-code-reader/" class="nav-link">
   <a class="w3-bar-item w3-button w3-hover-black">QR Code Reader</a>
   </router-link>
-  <router-link to="/qr-code-generator" class="nav-link">
+  <router-link to="/qr-code-generator/" class="nav-link">
   <a class="w3-bar-item w3-button w3-hover-black">QR Code Generator</a>
   </router-link>
 </nav>

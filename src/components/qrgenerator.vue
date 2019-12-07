@@ -52,7 +52,7 @@ export default {
        {name: 'description', content: 'Best online QR code reader. Visit our website and scan QR codes very easily.'}
      ],
      link: [
-    {rel: 'canonical', href: 'http://binarytotext.net/qr-code-reader'}
+    {rel: 'canonical', href: 'http://binarytotext.net/qr-code-reader/'}
   ]
    },
 

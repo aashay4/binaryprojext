@@ -30,139 +30,142 @@ Vue.use(Meta)
 export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
+  scrollBehavior (to, from, savedPosition){
+  return { x: 0, y: 0 };
+},
   routes: [
     {
       path: '/',
       component: binarytext
     },
     {
-      path: '/binary-to-hexadecimal',
+      path: '/binary-to-hexadecimal/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/binaryhexadecimal.vue')
     },
     {
-      path: '/hexadecimal-to-decimal',
+      path: '/hexadecimal-to-decimal/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/hexadecimaldecimal.vue')
     },
     {
-      path: '/wake-on-lan',
+      path: '/wake-on-lan/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/wake-on-lan.vue')
     },
     {
-      path: '/lan-local-area-network',
+      path: '/lan-local-area-network/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/lan.vue')
     },
     {
-      path: '/octal-to-binary-converter',
+      path: '/octal-to-binary-converter/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/octalbinary.vue')
     },
     {
-      path: '/decimal-to-binary',
+      path: '/decimal-to-binary/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/decimalbinary.vue')
     },
     {
-      path: '/octal-to-decimal',
+      path: '/octal-to-decimal/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/octaldecimal.vue')
     },
     {
-      path: '/decimal-to-hexadecimal',
+      path: '/decimal-to-hexadecimal/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/decimalhexadecimal.vue')
     },
     {
-      path: '/hexadecimal-to-octal',
+      path: '/hexadecimal-to-octal/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/hexadecimaloctal.vue')
     },
     {
-      path: '/decimal-to-octal',
+      path: '/decimal-to-octal/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/decimaloctal.vue')
     },
     {
-      path: '/hexadecimal-to-binary-converter',
+      path: '/hexadecimal-to-binary-converter/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/hexadecimalbinary.vue')
     },
     {
-      path: '/qr-code-reader',
+      path: '/qr-code-reader/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/qrgenerator.vue')
     },
     {
-      path: '/qr-code-generator',
+      path: '/qr-code-generator/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/qrreader.vue')
     },
     {
-      path: '/about-creator',
+      path: '/about-creator/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/creator.vue')
     },
     {
-      path: '/blog',
+      path: '/blog/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/blogs.vue')
     },
     {
-      path: '/binary-to-decimal',
+      path: '/binary-to-decimal/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/binarydecimal.vue')
     },
     {
-      path: '/binary-to-octal',
+      path: '/binary-to-octal/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/binaryoctal.vue')
     },
     {
-      path: '/write-for-us',
+      path: '/write-for-us/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/writeus.vue')
     },
     {
-      path: '/ascii-to-binary',
+      path: '/ascii-to-binary/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
@@ -177,15 +180,15 @@ export default new Router({
       redirect: '/404'
     },
     {
-      path: '/blog/wake-on-lan',
-      redirect: '/wake-on-lan'
-    },
-    {
       path: '/blog/wake-on-lan/',
-      redirect: '/wake-on-lan'
+      redirect: '/wake-on-lan/'
     },
     {
-      path: '/binary-converter',
+      path: '/blog/lan-local-area-network/',
+      redirect: '/lan-local-area-network'
+    },
+    {
+      path: '/binary-converter/',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.

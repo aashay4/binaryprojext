@@ -22,27 +22,27 @@
               Decimal to Binary
             </li>
           </router-link>
-            <router-link to="/binary-to-hexadecimal">
+            <router-link to="/binary-to-hexadecimal/">
             <li>Binary to Hexadecimal</li></router-link>
-            <router-link to="/decimal-to-hexadecimal">
+            <router-link to="/decimal-to-hexadecimal/">
             <li>Decimal to Hexadecimal</li></router-link>
-            <router-link to="/decimal-to-octal">
+            <router-link to="/decimal-to-octal/">
             <li>Decimal to Octal</li></router-link>
-            <router-link to="/binary-to-octal">
+            <router-link to="/binary-to-octal/">
             <li>Binary to Octal</li></router-link>
-            <router-link to="/hexadecimal-to-octal">
+            <router-link to="/hexadecimal-to-octal/">
             <li>Hexadecimal to Octal</li></router-link>
-            <router-link to="/qr-code-generator">
+            <router-link to="/qr-code-generator/">
             <li>QR Code Generator</li></router-link>
-            <router-link to="/qr-code-reader">
+            <router-link to="/qr-code-reader/">
             <li>QR Code Reader</li></router-link>
           </ul><br><br>
           <h3 style="background-color: silver;">Useful Resources</h3>
           <ul>
-            <router-link to="/about-creator">
+            <router-link to="/about-creator/">
             <li>About</li>
           </router-link>
-            <router-link to="/blog">
+            <router-link to="/blog/">
             <li>Blog</li>
           </router-link>
           </ul>
@@ -158,7 +158,7 @@ export default {
        {name: 'description', content: 'Convert octal to binary number with the help of this free tool.'}
      ],
      link: [
-    {rel: 'canonical', href: 'http://binarytotext.net/octal-to-binary'}
+    {rel: 'canonical', href: 'http://binarytotext.net/octal-to-binary-converter/'}
   ]
    },
 

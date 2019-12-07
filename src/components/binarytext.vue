@@ -24,11 +24,13 @@ data-ad-slot="1416243045"
 data-ad-format="auto"
 data-full-width-responsive="true">
 </Adsense><br><br>
+<div class="w3-hover-shadow w3-panel w3-leftbar w3-light-grey" style="height: 376px;"><br>
           <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/><br><br>
-          <button v-on:click="binarytotext()" style="width: 33%">Binary to Text</button>
-          <button v-on:click="texttobinary()" style="width: 33%">Text to Binary</button>
-          <button v-on:click="reset()" style="width: 33%">clear all fields</button><br><br>
-            <div class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow-y: scroll;"><b>Conversion:</b> {{ ans }}</div><br><br>
+          <button v-on:click="binarytotext()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">Binary to Text</button>
+          <button v-on:click="texttobinary()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">Text to Binary</button>
+          <button v-on:click="reset()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">Reset</button><br><br>
+            <div class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; height: 110px; overflow: scroll;"><b>Conversion:</b> {{ ans }}</div><br><br>
+          </div>
             <h1 class="w3-text-teal">Binary Translator</h1>
             <div>
               <p>Want to convert dec, hex or oct to the equivalent binary number? Here is the full binary translator. Please find it below. Enter any binary number in the box and click of the conversion, you will find out the conversion of that binary number into its equivalent hex, dec or octal number in just a second with our binary translator.</p>
