@@ -87,13 +87,13 @@ export default {
       title: 'LAN(Local Area Network) - Concept, Definition, Commands',
       previewText: 'LAN is the trend over the years, get to know about local area network(lan), useful commands to be an expert network technician and important networking components.',
       thumbnailURL: 'https://66.media.tumblr.com/dc0cac693a5c8bef8382e115fc01e621/tumblr_pvp5v7as0K1ytubllo1_1280.pnj',
-      id: 'lan-local-area-network'
+      id: 'lan-local-area-network/'
     },
       {
       title: 'Wake-On-LAN(WOL): Everything You Need to Know',
       previewText: 'Get the detailed information about wake on lan, from how does it work to MAC address, magic packet and the node.js code to deliver magic packet for the systems',
       thumbnailURL: 'https://66.media.tumblr.com/ae8fe925a97f368be217264f6ea0886e/tumblr_pvp9tx4Gtf1ytubllo1_400.png',
-      id: 'wake-on-lan'
+      id: 'wake-on-lan/'
     }
 ],
 search: ''

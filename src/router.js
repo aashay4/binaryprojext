@@ -185,7 +185,7 @@ export default new Router({
     },
     {
       path: '/blog/lan-local-area-network/',
-      redirect: '/lan-local-area-network'
+      redirect: '/lan-local-area-network/'
     },
     {
       path: '/binary-converter/',
