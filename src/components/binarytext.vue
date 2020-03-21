@@ -113,7 +113,7 @@ export default {
      meta: [
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: 'Convert binary to text with this free translator. Just enter zeros and ones and convert it into the equivalent text values with this free binary translator.'}
+       {name: 'description', content: 'A binary to text converter and also binary translator. Just enter zeros and ones and convert it into the equivalent text values with this free binary translator.'}
      ],
      link: [
     {rel: 'canonical', href: 'http://binarytotext.net/'}
