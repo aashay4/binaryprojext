@@ -3,9 +3,6 @@
   <router-link
   :to="id">
     <article>
-      <div
-      :style="{backgroundImage: 'url(' + thumbnailImage + ')'}"
-      class="post-preview-thumbnail"></div>
       <div>
         <h3>{{ title }}</h3>
         <p>{{ excert }}</p>
