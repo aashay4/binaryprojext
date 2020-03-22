@@ -95,6 +95,12 @@ data-full-width-responsive="true">
           <p>For example, if you want to convert a binary number "01000001" into its equivalent text number. Take the first eight characters binary given to you(That's probably 01000001) and convert it into the ASCII values. Now find out the ASCII value of the specific character. And you will get the number "A" for that binary number. If you have been given number (0100000101010111). Now take the first eight characters, find the equivalent text number. After the completion, take another eight characters and find their relevant values. Once you have converted the values, you can take help of our binary to text tool to check out the answer of the given number.</p>
         </div>
       </div>
+      <div class="w3-row w3-padding-64" style="text-align: justify;">
+        <div class="w3-twothird w3-container">
+          <h3 class="w3-text-teal">Convert 01000001 01000001 binry code to Text</h3>
+          <p>The binary to text code conversion of 01000001 01000001 is AA. As mentioned above, take the first eight characters of the given number. So, the first eight characters of this number are 01000001. The binary to text conversion of this number is "A". Once you have converted this number, convert another number. The second set for conversion would be 01000001. Again, this is the same number and conversion would be "A". So, the final binary to text conversion of "01000001 01000001" would be "AA".</p>
+        </div>
+      </div>
       <footer-app></footer-app>
   </div>
 </div>
@@ -111,12 +117,11 @@ export default {
   metaInfo: {
      title: 'Binary to Text Converter (Binary Translator)',
      meta: [
-
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: 'A binary to text converter and also binary translator. Just enter zeros and ones and convert it into the equivalent text values with this free binary translator.'}
+       {name: 'description', content: 'A binary to text converter and also binary translator. Just enter a binary code and convert it into the equivalent text values with this free binary translator.'}
      ],
      link: [
-    {rel: 'canonical', href: 'http://binarytotext.net/'}
+    {rel: 'canonical', href: 'https://binarytotext.net/'}
   ]
    },
 

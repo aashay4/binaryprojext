@@ -211,7 +211,7 @@ export default {
        {name: 'description', content: 'Best decimal to hexadecimal converter. Get the answers about the conversions and learn how to convert decimal number to a hexadecimal.'}
      ],
      link: [
-    {rel: 'canonical', href: 'http://binarytotext.net/hexadecimal-to-decimal/'}
+    {rel: 'canonical', href: 'https://binarytotext.net/hexadecimal-to-decimal/'}
   ]
    },
   components:{

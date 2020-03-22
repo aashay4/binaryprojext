@@ -71,7 +71,7 @@ export default {
        {name: 'description', content: 'Read our blog posts find our what is happening in the technology world. Subcribe today for the news latter.'}
      ],
      link: [
-    {rel: 'canonical', href: 'http://binarytotext.net/blog/'}
+    {rel: 'canonical', href: 'https://binarytotext.net/blog/'}
   ]
    },
   components:{

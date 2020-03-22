@@ -10,7 +10,7 @@
           <button v-on:click="bintohex()" style="width: 33%">Binary to Hexadecimal</button>
           <button v-on:click="hextobin()" style="width: 33%">Hexadecimal to Binary</button>
           <button v-on:click="reset()" style="width: 33%">clear all the fields</button><br><br>
-            <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll">Conversion: {{ ans }}</p>
+          <p class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; overflow: scroll">Conversion: {{ ans }}</p>
         </div><br>
         <div class="w3-third w3-container">
           <h3 style="background-color: silver;">Other Useful Tools</h3>
@@ -175,7 +175,7 @@ export default {
        {name: 'description', content: 'Binary to Hexadecimal converter. The simplest online translator of hexadecimal to binary conversions. Visit here and get answers!'}
      ],
      link: [
-    {rel: 'canonical', href: 'http://binarytotext.net/binary-to-hexadecimal/'}
+    {rel: 'canonical', href: 'https://binarytotext.net/binary-to-hexadecimal/'}
   ]
    },
 

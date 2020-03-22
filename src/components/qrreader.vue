@@ -56,7 +56,7 @@ export default {
        {name: 'description', content: 'Generator QR codes easily with our free online tool – QR Code Generator. Visit the website and generate the QR code in the most pleasant way.'}
      ],
      link: [
-    {rel: 'canonical', href: 'http://binarytotext.net/qr-code-generator/'}
+    {rel: 'canonical', href: 'https://binarytotext.net/qr-code-generator/'}
   ]
    },
   components:{

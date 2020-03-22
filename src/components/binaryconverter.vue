@@ -84,7 +84,7 @@ export default {
        {name: 'description', content: ''}
      ],
      link: [
-    {rel: 'canonical', href: 'http://binarytotext.net/binary-converter/'}
+    {rel: 'canonical', href: 'https://binarytotext.net/binary-converter/'}
   ]
    },
 

@@ -5,7 +5,7 @@
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">Decimal to Binary</h1>
-          <p>To use this decimal to binary tool, enter a decimal number up to 19 characters and click on the conversion button. For example, enter a decimal number "44" into the text box and click on the button, you will get the binary number "101100". If you want to convert a binary number into the decimal then enter zeros and ones into the box and click on specific converter button. You will get the specific decimal number for the zeros and ones.</p>
+          <p>To use this decimal to binary tool, enter a decimal number up to 19 characters and click on the conversion button. For example, enter a decimal number "44" into the text box and click on the button, you will get the binary number "101100". If you want to convert a binary number into the decimal then enter zeros and ones into the box and click on specific converter button. With this decimal to binary tool you will also be able to get the correct conversion for oct and hex numbers.</p>
           <input type="text" v-model="text_value" style="width: 100%" class="w3-border w3-padding-large w3-padding-32 w3-center" placeholder="Enter a value"/><br><br>
           <button v-on:click="dectobin(); dectohex(); dectooct();" style="width: 49%">Decimal to Binary</button>
           <button v-on:click="reset()" style="width: 49%">clear all the fields</button><br><br>
@@ -63,14 +63,16 @@
       </div>
       <div class="w3-row" style="text-align: justify;">
         <div class="w3-twothird w3-container">
-          <h2 class="w3-text-teal">The decimal converter structure</h2>
-            <p>Just for an example, if you want to convert the decimal number to binary number then follow these steps. Firstly, divide the given number by 2. After you are dividing it by 2, get the float for the next iteration. Note the reminder for the binary digit. For example, if you enter the number "4422" in the textbox and you will get this answer: 1000101000110.</p><br>
+          <h2 class="w3-text-teal">The Decimal to Binary Converter Structure</h2>
+            <p>Just for an example, if you want to convert decimal to binary number then follow these steps. Firstly, divide the given number by 2. After you are dividing it by 2, get the float for the next iteration. Note the reminder for the binary digit. For example, if you enter the number "4422" in the textbox and you will get this answer: 1000101000110.</p><br>
         </div>
-        <div class="w3-third w3-container">
-          <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-          <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
         </div>
-      </div>
+      <div class="w3-row" style="text-align: justify;">
+        <div class="w3-twothird w3-container">
+          <h2 class="w3-text-teal">Conversion of 12 to Binary</h2>
+            <p>Converting 12 decimal to binary is pretty simple. Firstly, divide 12 by 2 and the remainder would be 0 and quotient for 12 will be 6. Again dividing 6 by two will give 0 remainder and 3 quotients. Now, dividing 3 by 2 will give the remainder of 1 and quotient of 1. That's it! The decimal to binary conversion of number 12 will be 1100.</p><br>
+        </div>
+        </div>
       <footer-app></footer-app>
   </div>
 </div>
@@ -91,7 +93,7 @@ export default {
        {name: 'description', content: 'With Decimal to Binary converter, get the numbers converted really easily. Get to know about the conversion process of binary to decimal and vice a versa.'}
      ],
      link: [
-    {rel: 'canonical', href: 'http://binarytotext.net/decimal-to-binary/'}
+    {rel: 'canonical', href: 'https://binarytotext.net/decimal-to-binary/'}
   ]
    },
   components:{

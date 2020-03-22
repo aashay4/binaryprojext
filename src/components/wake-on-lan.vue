@@ -88,7 +88,7 @@ export default {
        {name: 'description', content: 'wake-on-lan widely popular among the techies is the protocol to wake a computer from over the network layer. Some call it wol. Get the detailed information about wake-on-lan here.'}
      ],
      link: [
-    {rel: 'canonical', href: 'http://binarytotext.net/wake-on-lan/'}
+    {rel: 'canonical', href: 'https://binarytotext.net/wake-on-lan/'}
   ]
    },
   components:{

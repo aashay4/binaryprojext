@@ -172,7 +172,7 @@ export default {
        {name: 'description', content: 'Enter an octal base 8 number in the box and convert it into the decimal number with this octal to decimal translator.'}
      ],
      link: [
-    {rel: 'canonical', href: 'http://binarytotext.net/octal-to-decimal/'}
+    {rel: 'canonical', href: 'https://binarytotext.net/octal-to-decimal/'}
   ]
    },
   components:{
