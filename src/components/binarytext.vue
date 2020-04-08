@@ -118,7 +118,7 @@ export default {
      title: 'Binary to Text Converter (Binary Translator)',
      meta: [
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: 'A binary to text converter and also binary translator. Just enter a binary code and convert it into the equivalent text values with this free binary translator.'}
+       {name: 'description', content: 'A binary to text converter and also binary translator. Just enter a binary code and convert it into the equivalent text values with this free binary code translator.'}
      ],
      link: [
     {rel: 'canonical', href: 'https://binarytotext.net/'}
