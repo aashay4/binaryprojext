@@ -103,10 +103,6 @@ export default {
       id: '/3-in-binary/'
     },
     {
-      title: 'Write 4 in binary',
-      id: '/how-to-write-4-in-binary/'
-    },
-    {
       title: '8, 1, 16, 12, 100, 5, 7, 128, 42, 15, 256, 64, 11, 9, 20, 14, 32, 25 in binary numbers',
       id: '/binary-numbers/'
     },
