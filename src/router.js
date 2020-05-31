@@ -2,27 +2,6 @@ import Vue from 'vue'
 import Meta from 'vue-meta'
 import Router from 'vue-router'
 import binarytext from './components/binarytext.vue'
-import binaryhexadecimal from './components/binaryhexadecimal.vue'
-import binaryoctal from './components/binaryoctal.vue'
-import decimalbinary from './components/decimalbinary.vue'
-import decimalhexadecimal from './components/decimalhexadecimal.vue'
-import hexadecimaloctal from './components/hexadecimaloctal.vue'
-import decimaloctal from './components/decimaloctal.vue'
-import qrgenerator from './components/qrgenerator.vue'
-import qreader from './components/qrreader.vue'
-import creator from './components/creator.vue'
-import blogs from './components/blogs.vue'
-import writeus from './components/writeus.vue'
-import notfound from './components/notfound.vue'
-import asciibinary from './components/asciibinary.vue'
-import binarydecimal from './components/binarydecimal.vue'
-import hexadecimalbinary from './components/hexadecimalbinary.vue'
-import hexadecimaldecimal from './components/hexadecimaldecimal.vue'
-import lan from './components/lan.vue'
-import octalbinary from './components/octalbinary.vue'
-import octaldecimal from './components/octaldecimal.vue'
-import wakeonlan from './components/wake-on-lan.vue'
-import binaryconverter from './components/binaryconverter.vue'
 
 Vue.use(Router)
 Vue.use(Meta)
@@ -30,7 +9,7 @@ Vue.use(Meta)
 export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
-  scrollBehavior (to, from, savedPosition){
+  scrollBehavior (){
   return { x: 0, y: 0 };
 },
   routes: [
@@ -193,6 +172,62 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './components/binaryconverter.vue')
+    },
+    {
+      path: '/2-in-binary/',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './components/2inbinary.vue')
+    },
+    {
+      path: '/write-6-in-binary/',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './components/6inbinary.vue')
+    },
+    {
+      path: '/how-to-write-10-in-binary/',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './components/10inbinary.vue')
+    },
+    {
+      path: '/22inbinary/',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './components/22inbinary.vue')
+    },
+    {
+      path: '/3-in-binary/',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './components/3inbinary.vue')
+    },
+    {
+      path: '/how-to-write-4-in-binary/',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './components/4inbinary.vue')
+    },
+    {
+      path: '/binary-numbers/',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './components/binarynumbers.vue')
+    },
+    {
+      path: '/decimal-to-fraction/',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ './components/decimalfraction.vue')
     }
   ]
 })

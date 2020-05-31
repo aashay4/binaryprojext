@@ -80,6 +80,9 @@
   <router-link to="/qr-code-generator/" class="nav-link">
   <a class="w3-bar-item w3-button w3-hover-black">QR Code Generator</a>
   </router-link>
+  <router-link to="/decimal-to-fraction/" class="nav-link">
+  <a class="w3-bar-item w3-button w3-hover-black">Decimal to Fraction</a>
+  </router-link>
 </nav>
 </div>
 <!-- Overlay effect when opening sidebar on small screens -->

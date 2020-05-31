@@ -5,7 +5,6 @@
     <article>
       <div>
         <h3>{{ title }}</h3>
-        <p>{{ excert }}</p>
       </div>
     </article>
   </router-link>
@@ -16,14 +15,6 @@
 export default {
   props: {
     title: {
-      type: String,
-      required: true
-    },
-    excert: {
-      type: String,
-      required: true
-    },
-    thumbnailImage: {
       type: String,
       required: true
     },
@@ -47,13 +38,6 @@ a {
   width: 90%;
   height: 20rem;
   margin-left: 1rem;
-}
-
-.post-preview-thumbnail {
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 15rem;
 }
 
 .post-preview-content {

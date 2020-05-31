@@ -83,14 +83,40 @@ export default {
     return {
     posts: [
       {
+      title: 'How to Write 2 in binary',
+      id: '/2-in-binary/'
+    },
+    {
+      title: 'Write number 6 in binary',
+      id: '/write-6-in-binary/'
+    },
+    {
+      title: 'how to Write Number 10 in binary',
+      id: '/how-to-write-10-in-binary/'
+    },
+    {
+      title: 'Number 22 in binary',
+      id: '/22inbinary/'
+    },
+    {
+      title: '3 in binary',
+      id: '/3-in-binary/'
+    },
+    {
+      title: 'Write 4 in binary',
+      id: '/how-to-write-4-in-binary/'
+    },
+    {
+      title: '8, 1, 16, 12, 100, 5, 7, 128, 42, 15, 256, 64, 11, 9, 20, 14, 32, 25 in binary numbers',
+      id: '/binary-numbers/'
+    },
+      {
       title: 'LAN(Local Area Network) - Concept, Definition, Commands',
-      previewText: 'LAN is the trend over the years, get to know about local area network(lan), useful commands to be an expert network technician and important networking components.',
-      id: 'lan-local-area-network/'
+      id: '/lan-local-area-network/'
     },
       {
       title: 'Wake-On-LAN(WOL): Everything You Need to Know',
-      previewText: 'Get the detailed information about wake on lan, from how does it work to MAC address, magic packet and the node.js code to deliver magic packet for the systems',
-      id: 'wake-on-lan/'
+      id: '/wake-on-lan/'
     }
 ],
 search: ''
@@ -99,7 +125,7 @@ search: ''
   computed: {
     filteredPosts: function(){
       return this.posts.filter((post) => {
-        return post.previewText.match(this.search);
+        return post.title.match(this.search);
       });
     }
   }
