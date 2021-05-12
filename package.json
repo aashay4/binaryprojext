@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "bignumber.js": "^8.1.1",
-    "mathjs": "^7.0.0",
+    "mathjs": "^7.5.1",
     "prerender-spa-plugin": "^3.4.0",
     "vue": "^2.5.21",
     "vue-google-adsense": "^1.6.0",
